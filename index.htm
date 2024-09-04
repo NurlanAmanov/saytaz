@@ -110,7 +110,7 @@
                         class="pt-[.56rem] mb-5 pb-[.56rem] text-white bg-purpleGradient text-center px-6 rounded-[8px] btnLspace w-[100%]   h-12 font-bold font-manrope opacity-100 teklifal ">Qiymət
                         təklif al</button>
                     <button
-                        class="text-[#a271f2] pt-[.56rem] pb-[.56rem] text-[19px] bg-white btnLspace text-mainLightPurple border border-mainLightPurple font-bold text-center border-[#A271F2] rounded-[8px] w-[100%] h-12 font-manrope opacity-100">Daxil
+                        class="text-[#a271f2] pt-[.56rem] pb-[.56rem] text-[19px] bg-white btnLspace text-#A271F2 border border-#A271F2 font-bold text-center border-[#A271F2] rounded-[8px] w-[100%] h-12 font-manrope opacity-100">Daxil
                         olun</button>
                 </div>
 
@@ -120,8 +120,8 @@
     </header>
     <main>
         <div class="container w-full ">
-            <div class="costCalculator md:w-4/5 w-full mx-auto mt-4 bg-[#f5f5f5] lg:flex lg:gap-3 justify-center p-4">
-                <div class="blcok-container lg:w-[66.666667%]  bg-white p-4">
+            <div class="calk mb-12 md:w-4/5 w-full mx-auto mt-4 bg-[#f5f5f5] lg:flex lg:gap-3 justify-center p-4">
+                <div class="blcok-container lg:w-[66.666667%] mb-8  bg-white p-4">
                     <div class="div-blcoktext p-4  w-full mx-auto flex items-center justify-center p-4">
                         <h1 class="!text-5xl lmd:text-4xl font-bold mt-4 mb-12">Qiymət Təklifi Al</h1>
                     </div>
@@ -170,9 +170,9 @@
                                     <div class="flex justify-between items-center md:w-[48%] ">
                                         <span class="text-[18px] font-semibold text-gray-900">Bloq</span>
                                         <label class="relative inline-block w-11 h-6">
-                                            <input onchange="goelave()"  value="200" id="bloq" type="checkbox" class="peer sr-only" />
+                                            <input onchange="goelave()"   value="200" id="bloq" type="checkbox" class="sr-only peer" />
                                             <div
-                                                class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300">
+                                                class="w-full h-full bg-gray-200 peer peer-checked:bg-[#A271F2]  rounded-full peer peer-checked:bg-#A271F2 transition-colors duration-300">
                                             </div>
                                             <div
                                                 class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full">
@@ -185,7 +185,7 @@
                                         <span class="text-[18px] font-semibold text-gray-900">Üzv girişi / Profillər</span>
                                         <label class="relative inline-block w-11 h-6">
                                           <input onchange="goelave()" value="400" id="profiller" type="checkbox" class="peer sr-only" />
-                                          <div class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300"></div>
+                                          <div class="w-full h-full bg-gray-200 peer peer-checked:bg-[#A271F2]  rounded-full peer peer-checked:bg-#A271F2 transition-colors duration-300"></div>
                                           <div class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full"></div>
                                         </label>
                                       </div>
@@ -194,9 +194,9 @@
                                     <div class="flex justify-between items-center md:w-[48%]">
                                         <span class="text-[18px] font-semibold text-gray-900">Responsive</span>
                                         <label class="relative inline-block w-11 h-6">
-                                            <input profiller id="respansiv" onchange="goelave()" value="100"  type="checkbox" class="peer sr-only" />
+                                            <input profiller id="respansiv" onchange="goelave()" value="400"  type="checkbox" class="peer sr-only" />
                                             <div
-                                                class="w-full  h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300">
+                                                class="w-full  peer peer-checked:bg-[#A271F2]  h-full bg-gray-200 rounded-full peer peer-checked:bg-#A271F2 transition-colors duration-300">
                                             </div>
                                             <div
                                                 class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full">
@@ -207,9 +207,9 @@
                                     <div class="flex justify-between items-center md:w-[48%]">
                                         <span class="text-[18px] font-semibold text-gray-900">Forum</span>
                                         <label class="relative inline-block w-11 h-6">
-                                            <input  id="form" onchange="goelave()" value="100" type="checkbox" class="peer sr-only" />
+                                            <input  id="form" onchange="goelave()" value="400" type="checkbox" class="peer sr-only" />
                                             <div
-                                                class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300">
+                                                class="w-full peer peer-checked:bg-[#A271F2]  h-full bg-gray-200 rounded-full peer peer-checked:bg-#A271F2 transition-colors duration-300">
                                             </div>
                                             <div
                                                 class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full">
@@ -222,7 +222,7 @@
                                         <label class="relative inline-block w-11 h-6">
                                             <input id="mesaj" onchange="goelave()" value="50" type="checkbox" class="peer sr-only" />
                                             <div
-                                                class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300">
+                                                class="w-full h-full peer peer-checked:bg-[#A271F2]   bg-gray-200 rounded-full peer peer-checked:bg-#A271F2 transition-colors duration-300">
                                             </div>
                                             <div
                                                 class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full">
@@ -235,7 +235,7 @@
                                         <label class="relative inline-block w-11 h-6">
                                             <input id="canlisohbet"  onchange="goelave()" value="50" type="checkbox" class="peer sr-only" />
                                             <div
-                                                class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300">
+                                                class="w-full h-full peer peer-checked:bg-[#A271F2]  bg-gray-200 rounded-full peer peer-checked:bg-#A271F2 transition-colors duration-300">
                                             </div>
                                             <div
                                                 class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full">
@@ -248,7 +248,7 @@
                                         <label class="relative inline-block w-11 h-6">
                                             <input id="qalareya" onchange="goelave()" value="100" type="checkbox" class="peer sr-only" />
                                             <div
-                                                class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300">
+                                                class="w-full h-full peer peer-checked:bg-[#A271F2]  bg-gray-200 rounded-full peer peer-checked:bg-#A271F2 transition-colors duration-300">
                                             </div>
                                             <div
                                                 class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full">
@@ -261,7 +261,7 @@
                                         <label class="relative inline-block w-11 h-6">
                                             <input id="elaqeforma" onchange="goelave()" value="100" type="checkbox" class="peer sr-only" />
                                             <div
-                                                class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300">
+                                                class="w-full h-full peer peer-checked:bg-[#A271F2]  bg-gray-200 rounded-full peer peer-checked:bg-#A271F2 transition-colors duration-300">
                                             </div>
                                             <div
                                                 class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full">
@@ -273,7 +273,7 @@
                                         <label class="relative inline-block w-11 h-6">
                                             <input id="saytaxtir" onchange="goelave()" value="100" type="checkbox" class="peer sr-only" />
                                             <div
-                                                class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300">
+                                                class="w-full h-full peer peer-checked:bg-[#A271F2]  bg-gray-200 rounded-full peer peer-checked:bg-#A271F2 transition-colors duration-300">
                                             </div>
                                             <div
                                                 class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full">
@@ -286,7 +286,7 @@
                                         <label class="relative inline-block w-11 h-6">
                                             <input id="xerite" onchange="goelave()" value="100" type="checkbox" class="peer sr-only" />
                                             <div
-                                                class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300">
+                                                class="w-full peer peer-checked:bg-[#A271F2]  h-full bg-gray-200 rounded-full peer peer-checked:bg-#A271F2 transition-colors duration-300">
                                             </div>
                                             <div
                                                 class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full">
@@ -299,7 +299,7 @@
                                         <label class="relative inline-block w-11 h-6">
                                             <input id="rezerv" onchange="goelave()" value="100" type="checkbox" class="peer sr-only" />
                                             <div
-                                                class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300">
+                                                class="w-full peer peer-checked:bg-[#A271F2]   h-full bg-gray-200 rounded-full peer peer-checked:bg-[#A271F2] transition-colors duration-300">
                                             </div>
                                             <div
                                                 class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full">
@@ -313,7 +313,7 @@
                                         <label class="relative inline-block w-11 h-6">
                                             <input id="socialmedia" onchange="goelave()" value="50" type="checkbox" class="peer sr-only" />
                                             <div
-                                                class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300">
+                                                class="w-full peer peer-checked:bg-[#A271F2]  h-full bg-gray-200 rounded-full peer peer-checked:bg-#A271F2 transition-colors duration-300">
                                             </div>
                                             <div
                                                 class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full">
@@ -327,7 +327,7 @@
                                         <label class="relative inline-block w-11 h-6">
                                             <input id="analtikiz" onchange="goelave()" value="50" type="checkbox" class="peer sr-only" />
                                             <div
-                                                class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300">
+                                                class="w-full peer peer-checked:bg-[#A271F2]  h-full bg-gray-200 rounded-full peer peer-checked:bg-#A271F2 transition-colors duration-300">
                                             </div>
                                             <div
                                                 class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full">
@@ -341,7 +341,7 @@
                                         <label class="relative inline-block w-11 h-6">
                                             <input id="adminpanel" value="300" onchange="goelave()" type="checkbox" class="peer sr-only" />
                                             <div
-                                                class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300">
+                                                class="w-full h-full peer peer-checked:bg-[#A271F2]  bg-gray-200 rounded-full peer peer-checked:bg-#A271F2 transition-colors duration-300">
                                             </div>
                                             <div
                                                 class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full">
@@ -414,7 +414,7 @@
                                     <span class="text-[18px] font-semibold text-gray-900">Ödəniş</span>
                                     <label class="relative inline-block w-11 h-6">
                                       <input id="odenis" value="200" onchange="ticaretgo()" type="checkbox" class="peer sr-only" />
-                                      <div class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300"></div>
+                                      <div class="w-full peer peer-checked:bg-[#A271F2]  h-full bg-gray-200 rounded-full peer peer-checked:bg-#A271F2 transition-colors duration-300"></div>
                                       <div class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full"></div>
                                     </label>
                                   </div>
@@ -423,7 +423,7 @@
                                     <span class="text-[18px] font-semibold text-gray-900">Məhsullar</span>
                                     <label class="relative inline-block w-11 h-6">
                                       <input  id="mehsullar" value="300" onchange="ticaretgo()" type="checkbox" class="peer sr-only" />
-                                      <div class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300"></div>
+                                      <div class="w-full peer peer-checked:bg-[#A271F2]  h-full bg-gray-200 rounded-full peer peer-checked:bg-#A271F2 transition-colors duration-300"></div>
                                       <div class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full"></div>
                                     </label>
                                   </div>
@@ -431,11 +431,12 @@
                                   <div class="flex justify-between items-center w-full">
                                     <span class="text-[18px] font-semibold text-gray-900">Filtr</span>
                                     <label class="relative inline-block w-11 h-6">
-                                      <input  id="filtr" value="300" onchange="ticaretgo()" type="checkbox" class="peer sr-only" />
-                                      <div class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300"></div>
-                                      <div class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full"></div>
+                                        <input id="filtr" value="300" onchange="ticaretgo()" type="checkbox" class="peer sr-only" />
+                                        <div class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-[#A271F2] transition-colors duration-300"></div>
+                                        <div class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full"></div>
                                     </label>
-                                  </div>
+                                </div>
+                                
                                 </div>
                           
                                 <!-- Sağ sütun -->
@@ -444,7 +445,7 @@
                                     <span class="text-[18px] font-semibold text-gray-900">Səbət</span>
                                     <label class="relative inline-block w-11 h-6">
                                       <input id="sebet" value="500" onchange="ticaretgo()" type="checkbox" class="peer sr-only" />
-                                      <div class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300"></div>
+                                      <div class="w-full peer peer-checked:bg-[#A271F2]   h-full bg-gray-200 rounded-full peer peer-checked:bg-#A271F2 transition-colors duration-300"></div>
                                       <div class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full"></div>
                                     </label>
                                   </div>
@@ -453,7 +454,7 @@
                                     <span class="text-[18px] font-semibold text-gray-900">Bəyəndiklərim</span>
                                     <label class="relative inline-block w-11 h-6">
                                       <input id="like" value="300" onchange="ticaretgo()" type="checkbox" class="peer sr-only" />
-                                      <div class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300"></div>
+                                      <div class="w-full peer peer-checked:bg-[#A271F2]   h-full bg-gray-200 rounded-full peer peer-checked:bg-#A271F2 transition-colors duration-300"></div>
                                       <div class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full"></div>
                                     </label>
                                   </div>
@@ -462,7 +463,7 @@
                                     <span class="text-[18px] font-semibold text-gray-900">Məhsul Haqqında</span>
                                     <label class="relative inline-block w-11 h-6">
                                       <input id="mehsulhaqq" value="200" onchange="ticaretgo()" type="checkbox" class="peer sr-only" />
-                                      <div class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300"></div>
+                                      <div class="w-full peer peer-checked:bg-[#A271F2]  h-full bg-gray-200 rounded-full peer peer-checked:bg-#A271F2 transition-colors duration-300"></div>
                                       <div class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full"></div>
                                     </label>
                                   </div>
@@ -556,7 +557,7 @@
                 </a>
                 <div class="content-text mt-10">
                     <p
-                        class="lg:text-base text-[#300b60] lg:text-left text-center text-[16px] text-mainLightPurpleText leading-6 max-w-[456px] md:max-h-[130px] mb-10">
+                        class="lg:text-base text-[#300b60] lg:text-left text-center text-[16px] text-#A271F2Text leading-6 max-w-[456px] md:max-h-[130px] mb-10">
                         Sayt.az - Web saytların hazırlanması, Domain, Hosting satışı, SEO, SMM və texniki xidmətlər
                         təklif edir.</p>
                 </div>
@@ -566,14 +567,14 @@
                         class="grid grid-cols-5 gap-1 w-[100%] text-center sm:grid-cols-2 lg:flex lg:flex-wrap lg:space-x-6">
 
                         <a target="_blank" href="https://www.facebook.com/wwwsaytaz"
-                            class="text-mainLightPurple hover:text-mainLightPurpleHover active:text-mainLightPurpleActive"><span
+                            class="text-#A271F2 hover:text-#A271F2Hover active:text-#A271F2Active"><span
                                 class="sr-only">Facebook</span><svg fill="currentColor" viewBox="0 0 24 24"
                                 class="md:h-12 h-8 md:w-12 w-8" style="fill: rgb(162, 113, 242);" aria-hidden="true">
                                 <path fill-rule="evenodd"
                                     d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
                                     clip-rule="evenodd"></path>
                             </svg></a><a target="_blank" href="https://www.instagram.com/sayt.az"
-                            class="text-mainLightPurple hover:text-mainLightPurpleHover active:text-mainLightPurpleActive"><span
+                            class="text-#A271F2 hover:text-#A271F2Hover active:text-#A271F2Active"><span
                                 class="sr-only">Instagram</span><svg fill="currentColor" viewBox="0 0 24 24"
                                 class="md:h-12 h-8 md:w-12 w-8" aria-hidden="true">
                                 <path fill-rule="evenodd" style="fill: rgb(162, 113, 242);"
@@ -581,7 +582,7 @@
                                     clip-rule="evenodd"></path>
                             </svg></a><a target="_blank"
                             href="https://api.whatsapp.com/send?phone=994703300004&amp;text=Salam. Xidmətlərinizlə maraqlanıram."
-                            class="text-mainLightPurple hover:text-mainLightPurpleHover active:text-mainLightPurpleActive"><span
+                            class="text-#A271F2 hover:text-#A271F2Hover active:text-#A271F2Active"><span
                                 class="sr-only">Whatsapp</span><svg xmlns="http://www.w3.org/2000/svg"
                                 class="md:h-12 h-8 md:w-12 w-8" aria-hidden="true"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor" height="800px"
@@ -596,14 +597,14 @@
                                     </path>
                                 </g>
                             </svg></a><a target="_blank" href="https://www.linkedin.com/company/saytaz/"
-                            class="text-mainLightPurple hover:text-mainLightPurpleHover active:text-mainLightPurpleActive"><span
+                            class="text-#A271F2 hover:text-#A271F2Hover active:text-#A271F2Active"><span
                                 class="sr-only">LinkedIn</span><svg fill="currentColor" viewBox="0 0 24 24"
                                 class="md:h-12 h-8 md:w-12 w-8" aria-hidden="true">
                                 <path fill-rule="evenodd" style="fill: rgb(162, 113, 242);"
                                     d="M24.7154 14.9622V23.4762H19.6042V15.5324C19.6042 13.537 18.8647 12.1753 17.0151 12.1753C15.6027 12.1753 14.7623 13.093 14.3924 13.981C14.2575 14.2984 14.2227 14.7403 14.2227 15.1842V23.4762H9.10975C9.10975 23.4762 9.1785 10.0222 9.10975 8.62842H14.2218V10.7329C14.2115 10.7487 14.1982 10.7657 14.1883 10.7811H14.2218V10.7329C14.9012 9.72258 16.1141 8.27948 18.8291 8.27948C22.1937 8.27948 24.7154 10.4018 24.7154 14.9622ZM3.76184 1.47095C2.01271 1.47095 0.868958 2.5788 0.868958 4.03602C0.868958 5.46129 1.98005 6.60276 3.69438 6.60276H3.72832C5.51141 6.60276 6.61993 5.46129 6.61993 4.03602C6.58641 2.5788 5.51141 1.47095 3.76184 1.47095ZM1.17273 23.4762H6.2835V8.62842H1.17273V23.4762Z"
                                     clip-rule="evenodd"></path>
                             </svg></a><a target="_blank" href="https://www.youtube.com/@sayt-az"
-                            class="text-mainLightPurple hover:text-mainLightPurpleHover active:text-mainLightPurpleActive"><span
+                            class="text-#A271F2 hover:text-#A271F2Hover active:text-#A271F2Active"><span
                                 class="sr-only">YouTube</span><svg fill="currentColor" viewBox="0 0 24 24"
                                 class="md:h-12 h-8 md:w-12 w-8" aria-hidden="true">
                                 <path fill-rule="evenodd" style="fill: rgb(162, 113, 242);"
@@ -620,13 +621,13 @@
                     <ul role="list" class="space-y-4 w-full text-[#300b60] ">
                         <li class="mb-0 md:mb-8 text-[#300b60] font-bold sm:text-2xl text-lg uppercase">Hostinq
                             &amp; Domen</li>
-                        <li><a class="text-lg leading-6 font-medium text-mainLightPurpleText hover:text-mainLightPurpleTextHover"
+                        <li><a class="text-lg leading-6 font-medium text-#A271F2Text hover:text-#A271F2TextHover"
                                 href="/domain">Domen</a></li>
-                        <li><a class="text-lg leading-6 font-medium text-mainLightPurpleText hover:text-mainLightPurpleTextHover"
+                        <li><a class="text-lg leading-6 font-medium text-#A271F2Text hover:text-#A271F2TextHover"
                                 href="/web-hosting">Veb Hostinq</a></li>
-                        <li><a class="text-lg leading-6 font-medium text-mainLightPurpleText hover:text-mainLightPurpleTextHover"
+                        <li><a class="text-lg leading-6 font-medium text-#A271F2Text hover:text-#A271F2TextHover"
                                 href="/vps-hosting">VPS Hostinq</a></li>
-                        <li><a class="text-lg leading-6 font-medium text-mainLightPurpleText hover:text-mainLightPurpleTextHover"
+                        <li><a class="text-lg leading-6 font-medium text-#A271F2Text hover:text-#A271F2TextHover"
                                 href="/dedicated-server">Server</a></li>
                     </ul>
                 </div>
@@ -636,13 +637,13 @@
                             class="mb-0 md:mb-8 text-mainDarkPurple font-bold sm:text-2xl text-lg text-[#300b60] uppercase">
                             Şirkət
                         </li>
-                        <li><a class="text-lg leading-6 font-medium text-mainLightPurpleText hover:text-mainLightPurpleTextHover"
+                        <li><a class="text-lg leading-6 font-medium text-#A271F2Text hover:text-#A271F2TextHover"
                                 href="/haqqimizda">Haqqımızda</a></li>
-                        <li><a class="text-lg leading-6 font-medium text-mainLightPurpleText hover:text-mainLightPurpleTextHover"
+                        <li><a class="text-lg leading-6 font-medium text-#A271F2Text hover:text-#A271F2TextHover"
                                 href="/elaqe">Əlaqə</a></li>
-                        <li><a class="text-lg leading-6 font-medium text-mainLightPurpleText hover:text-mainLightPurpleTextHover"
+                        <li><a class="text-lg leading-6 font-medium text-#A271F2Text hover:text-#A271F2TextHover"
                                 href="/bloq">Bloq</a></li>
-                        <li><a class="text-lg leading-6 font-medium text-mainLightPurpleText hover:text-mainLightPurpleTextHover"
+                        <li><a class="text-lg leading-6 font-medium text-#A271F2Text hover:text-#A271F2TextHover"
                                 href="/portfolio">Portfolio</a></li>
                     </ul>
                 </div>
