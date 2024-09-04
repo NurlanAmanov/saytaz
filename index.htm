@@ -116,7 +116,7 @@
     </header>
     <main>
         <div class="container w-full ">
-            <div class="content bg-[#f5f5f5] p-6">
+            <div class="content bg-[#f5f5f5] p-4">
                 <div class="blcok-container lmd:w-2/3 w-full bg-white p-4">
                     <div class="div-blcoktext p-4  w-full mx-auto flex items-center justify-center p-4">
                         <h1 class="!text-5xl lmd:text-4xl font-bold mt-4 mb-12">Qiymət Təklifi Al</h1>
@@ -129,7 +129,9 @@
                                 <div class="control1 flex justify-between items-center">
                                     <span
                                         class="bg-[#A271F2] text-white flex xmd:w-8 w-6 xmd:h-8 h-6 xmd:text-base text-sm items-center justify-center rounded-md">1</span>
-                                        <input id="sehifesayi"  value="1"  onchange="hesabla()" min="1" max="20" class="w-[80%] h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-[#A271F2]"  min="1" max="20" step="1" type="range" >
+                                    <input id="sehifesayi" value="1" onchange="hesabla()" min="1" max="20"
+                                        class="w-[80%] h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-[#A271F2]"
+                                        min="1" max="20" step="1" type="range">
                                     <span
                                         class="bg-[#A271F2] text-white flex xmd:w-8 w-6 xmd:h-8 h-6 xmd:text-base text-sm items-center justify-center rounded-md">20</span>
                                 </div>
@@ -138,10 +140,13 @@
                                 <p class="mb-4 whitespace-nowrap">Dizayn mürəkkəblik :</p>
                                 <div
                                     class="flex justify-between  mb-4 items-center text-[17px] sm:text-base xmd:gap-x-0 gap-x-4 xmd:pr-4 pr-0">
-                                    <span>Sadə</span><span>Orta</span><span>Xüsusi</span></div>
+                                    <span>Sadə</span><span>Orta</span><span>Xüsusi</span>
+                                </div>
                                 <div class="control1 flex justify-between items-center">
 
-                                    <input value="2"  id="dizayndeyer" onchange="hesabla()"  type="range" min="1" max="3" step="1" class="w-[100%] mb-4 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-[#A271F2]">
+                                    <input value="2" id="dizayndeyer" onchange="hesabla()" type="range" min="1" max="3"
+                                        step="1"
+                                        class="w-[100%] mb-4 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-[#A271F2]">
 
                                 </div>
                             </div>
@@ -150,7 +155,7 @@
                                 <p id="saytntc" class="text-[#A271F2] text-[20px] font-semibold"> 1 səhifə / ₼ 200</p>
                             </div>
                         </div>
-                        
+
                     </div>
                     <div class="mb-10 ">
                         <h3 class="text-[#212529]  text-lg font-medium">Veb sayt əlavələri</h3>
@@ -160,127 +165,346 @@
                                     <span class="text-[18px] font-semibold text-gray-900">Bloq</span>
                                     <label class="relative inline-block w-11 h-6">
                                         <input type="checkbox" class="peer sr-only" />
-                                        <div class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300"></div>
-                                        <div class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full"></div>
+                                        <div
+                                            class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300">
+                                        </div>
+                                        <div
+                                            class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full">
+                                        </div>
                                     </label>
                                 </div>
                                 <div class="flex justify-between items-center">
-                                    <span class="text-[18px] font-semibold text-gray-900">Üzv girişi /‍‍‍ Profillər</span>
+                                    <span class="text-[18px] font-semibold text-gray-900">Üzv girişi /‍‍‍
+                                        Profillər</span>
                                     <label class="relative inline-block w-11 h-6">
                                         <input type="checkbox" class="peer sr-only" />
-                                        <div class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300"></div>
-                                        <div class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full"></div>
+                                        <div
+                                            class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300">
+                                        </div>
+                                        <div
+                                            class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full">
+                                        </div>
                                     </label>
                                 </div>
                                 <div class="flex justify-between items-center">
                                     <span class="text-[18px] font-semibold text-gray-900">Responsive</span>
                                     <label class="relative inline-block w-11 h-6">
                                         <input type="checkbox" class="peer sr-only" />
-                                        <div class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300"></div>
-                                        <div class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full"></div>
+                                        <div
+                                            class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300">
+                                        </div>
+                                        <div
+                                            class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full">
+                                        </div>
                                     </label>
                                 </div>
                                 <div class="flex justify-between items-center">
                                     <span class="text-[18px] font-semibold text-gray-900">Forum</span>
                                     <label class="relative inline-block w-11 h-6">
                                         <input type="checkbox" class="peer sr-only" />
-                                        <div class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300"></div>
-                                        <div class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full"></div>
+                                        <div
+                                            class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300">
+                                        </div>
+                                        <div
+                                            class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full">
+                                        </div>
                                     </label>
                                 </div>
                                 <div class="flex justify-between items-center">
                                     <span class="text-[18px] font-semibold text-gray-900"> Mesajlaşma</span>
                                     <label class="relative inline-block w-11 h-6">
                                         <input type="checkbox" class="peer sr-only" />
-                                        <div class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300"></div>
-                                        <div class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full"></div>
+                                        <div
+                                            class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300">
+                                        </div>
+                                        <div
+                                            class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full">
+                                        </div>
                                     </label>
                                 </div>
                                 <div class="flex justify-between items-center">
                                     <span class="text-[18px] font-semibold text-gray-900">Canlı Söhbət</span>
                                     <label class="relative inline-block w-11 h-6">
                                         <input type="checkbox" class="peer sr-only" />
-                                        <div class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300"></div>
-                                        <div class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full"></div>
+                                        <div
+                                            class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300">
+                                        </div>
+                                        <div
+                                            class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full">
+                                        </div>
                                     </label>
                                 </div>
                                 <div class="flex justify-between items-center">
                                     <span class="text-[18px] font-semibold text-gray-900">Qalereya</span>
                                     <label class="relative inline-block w-11 h-6">
                                         <input type="checkbox" class="peer sr-only" />
-                                        <div class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300"></div>
-                                        <div class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full"></div>
+                                        <div
+                                            class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300">
+                                        </div>
+                                        <div
+                                            class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full">
+                                        </div>
                                     </label>
                                 </div>
                                 <div class="flex justify-between items-center">
                                     <span class="text-[18px] font-semibold text-gray-900">Əlaqə Forması</span>
                                     <label class="relative inline-block w-11 h-6">
                                         <input type="checkbox" class="peer sr-only" />
-                                        <div class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300"></div>
-                                        <div class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full"></div>
+                                        <div
+                                            class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300">
+                                        </div>
+                                        <div
+                                            class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full">
+                                        </div>
                                     </label>
                                 </div>
                                 <div class="flex justify-between items-center">
                                     <span class="text-[18px] font-semibold text-gray-900">Saytda Axtarış</span>
                                     <label class="relative inline-block w-11 h-6">
                                         <input type="checkbox" class="peer sr-only" />
-                                        <div class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300"></div>
-                                        <div class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full"></div>
+                                        <div
+                                            class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300">
+                                        </div>
+                                        <div
+                                            class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full">
+                                        </div>
                                     </label>
                                 </div>
                                 <div class="flex justify-between items-center">
-                                    <span class="text-[18px] font-semibold text-gray-900">Xəritə Məlumatı / Geolocation</span>
+                                    <span class="text-[18px] font-semibold text-gray-900">Xəritə Məlumatı /
+                                        Geolocation</span>
                                     <label class="relative inline-block w-11 h-6">
                                         <input type="checkbox" class="peer sr-only" />
-                                        <div class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300"></div>
-                                        <div class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full"></div>
+                                        <div
+                                            class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300">
+                                        </div>
+                                        <div
+                                            class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full">
+                                        </div>
                                     </label>
                                 </div>
                                 <div class="flex justify-between items-center">
                                     <span class="text-[18px] font-semibold text-gray-900">Rezervasyon</span>
                                     <label class="relative inline-block w-11 h-6">
                                         <input type="checkbox" class="peer sr-only" />
-                                        <div class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300"></div>
-                                        <div class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full"></div>
+                                        <div
+                                            class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300">
+                                        </div>
+                                        <div
+                                            class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full">
+                                        </div>
                                     </label>
                                 </div>
                                 <div class="flex justify-between items-center">
-                                    <span class="text-[18px] font-semibold text-gray-900">Sosial Media inteqrasiyası</span>
+                                    <span class="text-[18px] font-semibold text-gray-900">Sosial Media
+                                        inteqrasiyası</span>
                                     <label class="relative inline-block w-11 h-6">
                                         <input type="checkbox" class="peer sr-only" />
-                                        <div class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300"></div>
-                                        <div class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full"></div>
+                                        <div
+                                            class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300">
+                                        </div>
+                                        <div
+                                            class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full">
+                                        </div>
                                     </label>
                                 </div>
                                 <div class="flex justify-between items-center">
                                     <span class="text-[18px] font-semibold text-gray-900">Analitika / İzləmə</span>
                                     <label class="relative inline-block w-11 h-6">
                                         <input type="checkbox" class="peer sr-only" />
-                                        <div class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300"></div>
-                                        <div class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full"></div>
+                                        <div
+                                            class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300">
+                                        </div>
+                                        <div
+                                            class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full">
+                                        </div>
                                     </label>
                                 </div>
                                 <div class="flex justify-between items-center">
                                     <span class="text-[18px] font-semibold text-gray-900">Admin Panel</span>
                                     <label class="relative inline-block w-11 h-6">
                                         <input type="checkbox" class="peer sr-only" />
-                                        <div class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300"></div>
-                                        <div class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full"></div>
+                                        <div
+                                            class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300">
+                                        </div>
+                                        <div
+                                            class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full">
+                                        </div>
                                     </label>
                                 </div>
                             </div>
                         </div>
-                        
-                        
-                            <div class="son-netice  flex justify-between items-center py-4 px-4 bg-[#4a84bf26]">
-                                <p id="ntc" class="text-[#285a70] text-[19px]">Xərc :</p>
-                                <p id="saytntc" class="text-[#A271F2] text-[20px] font-semibold"> 1 səhifə / ₼ 200</p>
+
+
+                        <div class="son-netice  flex justify-between items-center py-4 px-4 bg-[#4a84bf26]">
+                            <p id="ntc" class="text-[#285a70] text-[19px]">Xərc :</p>
+                            <p id="saytntc" class="text-[#A271F2] text-[20px] font-semibold"> 1 səhifə / ₼ 200</p>
+                        </div>
+                    </div>
+                    <div class="mb-10 ">
+                        <h3 class="text-[#212529] text-lg font-semibold mt-3">Axtarış motorunun optimallaşdırılması</h3>
+                        <div class="statik-sehife pt-5 bg-[#f8f8fa] mt-2 rounded-md overflow-hidden">
+                            <div class="statik-blcok flex flex-col gap-4 py-2 mb-4 px-4">
+                                <div class="yoxlanis flex items-start justify-start gap-5 py-2 flex-col">
+                                    <div class="flex items-center gap-2 ">
+                                        <input type="checkbox" id="meta1" class="transition-all duration-500 h-5 w-5">
+                                        <label for="meta1" class="text-[18px]  font-semibold text-gray-700 cursor-pointer select-none">Başlıqlar & Meta</label>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <input type="checkbox" id="acarsoz" class="transition-all duration-500 h-5 w-5">
+                                        <label for="acarsoz" class="text-[18px] font-semibold text-gray-700 cursor-pointer select-none">Açar söz</label>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <input type="checkbox" id="qabaqcıltexnika" class="transition-all duration-500 h-5 w-5">
+                                        <label for="qabaqcıltexnika" class="text-[18px]  font-semibold text-gray-700 cursor-pointer select-none">+20 Qabaqcıl Texnika</label>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <input type="checkbox" id="basliqteq" class="transition-all duration-500 h-5 w-5">
+                                        <label for="basliqteq" class="text-[18px]  font-semibold text-gray-700 cursor-pointer select-none">Başlıq teqləri</label>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <input type="checkbox" id="sitemap" class="transition-all duration-500 h-5 w-5">
+                                        <label for="sitemap" class="text-[18px]  font-semibold text-gray-700 cursor-pointer select-none">Sitemap</label>
+                                    </div>
+                                </div>
+                                
                             </div>
                         </div>
-                        
+
+
+                        <div class="son-netice  flex justify-between items-center py-4 px-4 bg-[#4a84bf26]">
+                            <p id="ntc" class="text-[#285a70] text-[19px]">Xərc :</p>
+                            <p id="saytntc" class="text-[#A271F2] text-[20px] font-semibold"> ₼ 0
+                            <p>
+                        </div>
                     </div>
+                    <div class="mb-10 ">
+                        <h3 class="text-[#212529]  text-lg font-medium">Elektron ticarət əlavələri</h3>
+                        <div class="statik-sehife pt-5 bg-[#f8f8fa] mt-2 rounded-md overflow-hidden">
+                            <div class="statik-blcok flex flex-col gap-4 py-4 mb-4 px-4">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-[18px] font-semibold text-gray-900">Ödəniş</span>
+                                    <label class="relative inline-block w-11 h-6">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <div
+                                            class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300">
+                                        </div>
+                                        <div
+                                            class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full">
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-[18px] font-semibold text-gray-900">Səbət
+                                        </span>
+                                    <label class="relative inline-block w-11 h-6">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <div
+                                            class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300">
+                                        </div>
+                                        <div
+                                            class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full">
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-[18px] font-semibold text-gray-900">Məhsullar</span>
+                                    <label class="relative inline-block w-11 h-6">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <div
+                                            class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300">
+                                        </div>
+                                        <div
+                                            class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full">
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-[18px] font-semibold text-gray-900">Bəyəndiklərim</span>
+                                    <label class="relative inline-block w-11 h-6">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <div
+                                            class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300">
+                                        </div>
+                                        <div
+                                            class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full">
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-[18px] font-semibold text-gray-900"> Filtr</span>
+                                    <label class="relative inline-block w-11 h-6">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <div
+                                            class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300">
+                                        </div>
+                                        <div
+                                            class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full">
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-[18px] font-semibold text-gray-900">Canlı Söhbət</span>
+                                    <label class="relative inline-block w-11 h-6">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <div
+                                            class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300">
+                                        </div>
+                                        <div
+                                            class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full">
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-[18px] font-semibold text-gray-900">Məhsul Haqqında</span>
+                                    <label class="relative inline-block w-11 h-6">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <div
+                                            class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-mainLightPurple transition-colors duration-300">
+                                        </div>
+                                        <div
+                                            class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full">
+                                        </div>
+                                    </label>
+                                </div>
+                               
+                            </div>
+                        </div>
+
+
+                        <div class="son-netice  flex justify-between items-center py-4 px-4 bg-[#4a84bf26]">
+                            <p id="ntc" class="text-[#285a70] text-[19px]">Xərc :</p>
+                            <p id="saytntc" class="text-[#A271F2] text-[20px] font-semibold"> 1 səhifə / ₼ 200</p>
+                        </div>
+                    </div>
+                    <div class="mb-10 ">
+                    <h3 class="text-[#212529]  text-lg font-medium">Logo dizaynı</h3>
+                    <div class="statik-sehife pt-5 bg-[#f8f8fa] mt-2 rounded-md  overflow-hidden">
+                        
+                        <div class="statik-blcok mt-4 py-2 px-4">
+                           
+                            <div
+                                class="flex justify-between  mb-4 items-center text-[17px] sm:text-base xmd:gap-x-0 gap-x-4 xmd:pr-4 pr-0">
+                                <span>Ehtiyac yoxdur</span><span>Orta</span><span>Xüsusi</span>
+                            </div>
+                            <div class="control1 flex justify-between items-center">
+
+                                <input value="2" id="dizayndeyer" onchange="hesabla()" type="range" min="1" max="3"
+                                    step="1"
+                                    class="w-[100%] mb-4 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-[#A271F2]">
+
+                            </div>
+                        </div>
+                        <div class="son-netice  flex justify-between items-center py-4 px-4 bg-[#4a84bf26]">
+                            <p id="ntc" class="text-[#285a70] text-[19px]">Xərc :</p>
+                            <p id="saytntc" class="text-[#A271F2] text-[20px] font-semibold"> 1 səhifə / ₼ 200</p>
+                        </div>
+                    </div>
+
+                </div>
                 </div>
             </div>
+        </div>
         </div>
     </main>
 
