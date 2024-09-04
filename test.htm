@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span id="umumideyer" value="450" class="font-semibold whitespace-nowrap">450 ₼</span>
+<div id="əlavələrntc"></div>
+<div id="elavem"></div>
+<div id="elavesayt"></div>
+<div id="seo"></div>
+<div id="ticntc"></div>
+<div id="eticaret"></div>
+<div id="dizaynlogo"></div>
+<div id="logodizayn"></div>
+
+<script>
+// Əlavə funksiyası
+function goelave() {
+    let kod = 0;
+    if (adminpanel.checked) kod += +adminpanel.value;
+    if (bloq.checked) kod += +bloq.value;
+    if (profiller.checked) kod += +profiller.value;
+    if (respansiv.checked) kod += +respansiv.value;
+    if (analtikiz.checked) kod += +analtikiz.value;
+    if (socialmedia.checked) kod += +socialmedia.value;
+    if (rezerv.checked) kod += +rezerv.value;
+    if (xerite.checked) kod += +xerite.value;
+    if (elaqeforma.checked) kod += +elaqeforma.value;
+    if (qalareya.checked) kod += +qalareya.value;
+    if (canlisohbet.checked) kod += +canlisohbet.value;
+    if (mesaj.checked) kod += +mesaj.value;
+    if (form.checked) kod += +form.value;
+    if (saytaxtir.checked) kod += +saytaxtir.value;
+
+    // Nəticələri ekrana yazırıq
+    əlavələrntc.innerHTML = "₼ " + kod;
+    elavem.innerHTML = "₼ " + kod;
+
+    return kod;
+}
+
+// SEO funksiyası
+function elavego() {
+    let hesab = 0;
+    if (meta.checked) hesab += +meta.value;
+    if (qabaqciltexn.checked) hesab += +qabaqciltexn.value;
+    if (sitemap.checked) hesab += +sitemap.value;
+    if (acarsoz.checked) hesab += +acarsoz.value;
+    if (basliqteq.checked) hesab += +basliqteq.value;
+
+    // Nəticələri ekrana yazırıq
+    elavesayt.innerHTML = "₼ " + hesab;
+    seo.innerHTML = "₼ " + hesab;
+
+    return hesab;
+}
+
+// Ticarət funksiyası
+function ticaretgo() {
+    let ticarethesab = 0;
+    if (odenis.checked) ticarethesab += +odenis.value;
+    if (mehsullar.checked) ticarethesab += +mehsullar.value;
+    if (filtr.checked) ticarethesab += +filtr.value;
+    if (sebet.checked) ticarethesab += +sebet.value;
+    if (like.checked) ticarethesab += +like.value;
+    if (mehsulhaqq.checked) ticarethesab += +mehsulhaqq.value;
+
+    // Nəticələri ekrana yazırıq
+    ticntc.innerHTML = "₼ " + ticarethesab;
+    eticaret.innerHTML = "₼ " + ticarethesab;
+
+    return ticarethesab;
+}
+
+// Dizayn funksiyası
+function dizayngo() {
+    let artim = +dizaynim.value;
+    let dizaynhesab = (artim - 1) * 100;
+
+    // Nəticələri ekrana yazırıq
+    dizaynlogo.innerHTML = "₼ " + dizaynhesab;
+    logodizayn.innerHTML = "₼ " + dizaynhesab;
+
+    return dizaynhesab;
+}
+
+// Ümumi dəyəri yeniləyən funksiya
+function yenileUmumiDeyer() {
+    let esasDeyer = +document.getElementById('umumideyer').getAttribute('value'); // Başlanğıc dəyəri alırıq
+
+    let elaveQiymet = goelave(); // Əlavə qiymət
+    let seoQiymet = elavego(); // SEO qiymət
+    let ticaretQiymet = ticaretgo(); // Ticarət qiymət
+    let dizaynQiymet = dizayngo(); // Dizayn qiymət
+
+    let umumiDeyer = esasDeyer + elaveQiymet + seoQiymet + ticaretQiymet + dizaynQiymet;
+
+    // Ümumi dəyəri yeniləyirik
+    document.getElementById('umumideyer').innerHTML = umumiDeyer + " ₼";
+}
+
+// Bütün funksiyaları hər dəyişikliyə görə yeniləyək
+document.querySelectorAll('input[type="checkbox"]').forEach(el => {
+    el.addEventListener('change', yenileUmumiDeyer);
+});
+document.querySelectorAll('input[type="number"]').forEach(el => {
+    el.addEventListener('input', yenileUmumiDeyer);
+});
+
+// Başlanğıcda ümumi dəyəri göstəririk
+yenileUmumiDeyer();
+</script>
+
+</body>
+</html>

@@ -1,13 +1,18 @@
 const mobilemenu = document.getElementById('mobilemenu');
 const sehifesayi=document.getElementById('sehifesayi')
-const dizayndeyer=document.getElementById('dizayndeyer')
+const dizaynmurekb=document.getElementById('dizaynmurekb')
 const saytntc=document.getElementById('saytntc')
 const əlavələrntc=document.getElementById("əlavələrntc")
 const elavem =document.getElementById("elavem")
 const seo =document.getElementById("seo")
 const elavesayt =document.getElementById('elavesayt')
 const ticntc=document.getElementById('ticntc')
-eticaret.document.getElementById('eticaret')
+const eticaret=document.getElementById('eticaret')
+const dizaynlogo =document.getElementById('dizaynlogo')
+const dizaynim =document.getElementById('dizaynim')
+const logodizayn =document.getElementById('logodizayn')
+const umumideyer=document.getElementById('umumideyer')
+const umumhesablama=document.getElementById("umumhesablama")
 let kod=''
 
 function menuac() {
@@ -16,17 +21,6 @@ function menuac() {
 function closedmenu() {
     mobilemenu.style.display = 'none';
 }
-
-
-function hesabla(){
-    let kod=''
-    let hesabim1= dizayndeyer.value * 100
-    let hesabim2=sehifesayi.value * 100
-    let cem=(hesabim1+hesabim2)
-    saytntc.innerHTML= sehifesayi.value +  " səhifə / " + cem
-}
-hesabla()
-
 function goelave() {
    
     let kod=0
@@ -77,3 +71,27 @@ let ticarethesab=0
     ticntc.innerHTML=  "₼ " +ticarethesab
     eticaret.innerHTML= "₼ " +ticarethesab
 }
+
+function dizayngo() {
+    let artim = +dizaynim.value;  
+
+   let dizaynhesab=(artim-1)*100
+
+
+
+    dizaynlogo.innerHTML = "₼" + dizaynhesab;
+    logodizayn.innerHTML = "₼" + dizaynhesab;
+}
+dizayngo()
+// function hesabla() {
+//     let sehifeartim =+sehifesayi.value; 
+//     let deyisendeyer = (sehifeartim) * 100;  
+//     let dizaynnov = + dizaynmurekb.value; 
+//     let cemler =( dizaynnov) * 100;  
+
+//     // let umumiDeyer = deyisendeyer + cemler; 
+
+//     saytntc.innerHTML = sehifeartim + " səhifə / ₼ " + deyisendeyer
+// }
+// hesabla()
+

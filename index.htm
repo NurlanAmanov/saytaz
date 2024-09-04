@@ -149,7 +149,7 @@
                                     </div>
                                     <div class="control1 flex justify-between items-center">
 
-                                        <input value="2" id="dizayndeyer" onchange="hesabla()" type="range" min="1"
+                                        <input value="0" id="dizaynmurekb" onchange="hesabla()" type="range" min="1"
                                             max="3" step="1"
                                             class="w-[100%] mb-4 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-[#A271F2]">
 
@@ -492,15 +492,13 @@
                                     </div>
                                     <div class="control1 flex justify-between items-center">
 
-                                        <input value="2" id="dizayndeyer" onchange="hesabla()" type="range" min="1"
-                                            max="3" step="1"
-                                            class="w-[100%] mb-4 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-[#A271F2]">
+                                        <input value="1" id="dizaynim" onchange="dizayngo()" type="range" min="1" max="3" step="1"  class="w-[100%] mb-4 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-[#A271F2]">
 
                                     </div>
                                 </div>
                                 <div class="son-netice  flex justify-between items-center py-4 px-4 bg-[#4a84bf26]">
                                     <p id="ntc" class="text-[#285a70] text-[19px]">Xərc :</p>
-                                    <p id="saytntc" class="text-[#A271F2] text-[20px] font-semibold"> 1 səhifə / ₼ 200
+                                    <p id="dizaynlogo" class="text-[#A271F2] text-[20px] font-semibold">   ₼ 0
                                     </p>
                                 </div>
                             </div>
@@ -520,18 +518,18 @@
                                 :</span><span class="text-[#A271F2] font-bold text-lg" id="seo">₼ 0</span></p>
                         <p class="flex flex-row justify-between items-center"><span class="text-[#8b8b9a]">E-ticarət
                                 :</span><span class="text-[#A271F2] font-bold text-lg" id="eticaret">₼ 0</span></p>
-                        <p class="flex flex-row justify-between items-center"><span class="text-[#8b8b9a]">Logo dizaynı
-                                :</span><span class="text-[#A271F2] font-bold text-lg">₼ 0</span></p>
+                        <p class="flex flex-row justify-between items-center"><span  class="text-[#8b8b9a]">Logo dizaynı
+                                :</span><span id="logodizayn" class="text-[#A271F2] font-bold text-lg">₼ 0</span></p>
                         <hr>
                         <p class="flex flex-row justify-between items-center gap-4 text-[#8b8b9a] text-base text-right">
                             <span class="font-bold text-lg whitespace-nowrap">Qeyd :</span><span
-                                class="text-base font-semibold">Minimum sayt qiyməti <span
+                                class="text-base font-semibold">Minimum sayt qiyməti <span  id="umumhesablama"
                                     class="text-[#A271F2] whitespace-nowrap">₼ 450</span></span>
                         </p>
                     </div>
 
                     <h3 class="bg-[#a271f2] text-white text-2xl gap-2 p-8 flex flex-row justify-between items-center">
-                        <span>Ümumi təxmini dəyəri:</span><span class="font-semibold whitespace-nowrap">₼ 900</span>
+                        <span>Ümumi təxmini dəyəri:</span><span id="umumideyer" value="450" class="font-semibold whitespace-nowrap"> 450 ₼</span>
                     </h3>
 
                     <div class="mt-6">
