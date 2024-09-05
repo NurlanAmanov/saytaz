@@ -27,10 +27,12 @@ let hesablakod = 0
 function menuac() {
     mobilemenu.style.display = 'block';
     document.querySelector('body').style.overflowY="hidden"
+    document.querySelector('main').style.display="none"
 }
 function closedmenu() {
     mobilemenu.style.display = 'none';
     document.querySelector('body').style.overflowY = "auto";
+    document.querySelector('main').style.display="block"
 }
 
 
