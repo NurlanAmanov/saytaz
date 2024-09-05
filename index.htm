@@ -52,12 +52,12 @@
                     <img src="img/az.png" class="w-8" alt="">
                 </div>
             </div>
-            <div class="items-center  gap-4 w-[20%] hidden lg:flex">
+            <div class="items-center   gap-4 w-[30%] hidden lg:flex">
                 <button
-                    class="pt-[.56rem] pb-[.56rem] text-white bg-purpleGradient text-center px-6 rounded-[8px] btnLspace w-[55%]   h-12 font-bold font-manrope opacity-100 teklifal ">Qiymət
+                    class="pt-[.10rem] pb-[.10rem] text-white   text-center px-6 rounded-[8px] btnLspace w-[45%]   h-12 font-bold font-manrope opacity-100 teklifal ">Qiymət
                     təklif al</button>
                 <button
-                    class=" pt-[.56rem] pb-[.56rem] text-base bg-white btnLspace text-[#A271F2] border border-[#a271f2] font-bold text-center border-[#A271F2] rounded-[8px] w-[40%] h-12 font-manrope opacity-100">Daxil
+                    class=" pt-[.10rem] pb-[.10rem] text-base bg-white btnLspace text-[#A271F2] border border-[#a271f2]  w-[30%] font-bold text-center border-[#A271F2] rounded-[8px]  h-12 font-manrope opacity-100">Daxil
                     olun</button>
             </div>
             <button onclick="menuac()" class="lg:hidden">
@@ -107,7 +107,7 @@
             <div class="menucontent-bottom mx-4 flex items-center justify-center flex-col">
                 <div class="items-center  gap-4 w-[100%]  lg:flex">
                     <button
-                        class="pt-[.56rem] mb-5 pb-[.56rem] text-white bg-purpleGradient text-center px-6 rounded-[8px] btnLspace w-[100%]   h-12 font-bold font-manrope opacity-100 teklifal ">Qiymət
+                        class="pt-[.56rem] mb-5 pb-[.56rem] text-white text-center px-6 rounded-[8px] btnLspace w-[100%] text-[20px]   h-12 font-bold font-manrope opacity-100 teklifal ">Qiymət
                         təklif al</button>
                     <button
                         class="text-[#a271f2] pt-[.56rem] pb-[.56rem] text-[19px] bg-white btnLspace text-#A271F2 border border-#A271F2 font-bold text-center border-[#A271F2] rounded-[8px] w-[100%] h-12 font-manrope opacity-100">Daxil
@@ -133,12 +133,12 @@
                                     <p class="mb-4">Neçə statik səhifə olacaq?</p>
                                     <div class="control1 flex justify-between items-center">
                                         <span
-                                            class="bg-[#A271F2] text-white flex xmd:w-8 w-6 xmd:h-8 h-6 xmd:text-base text-sm items-center justify-center rounded-md">1</span>
-                                        <input id="sehifesayi" value="1" onchange="hesabla()" min="1" max="20"
-                                            class="w-[80%] h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-[#A271F2]"
-                                            min="1" max="20" step="1" type="range">
+                                            class="bg-[#A271F2] text-white flex xmd:w-8 w-[2rem] xmd:h-8 h-[2rem] xmd:text-base text-sm items-center justify-center rounded-md">1</span>
+                                        <input value="1" id="statiksehife" onchange="hesabla()" type="range" min="1"
+                                            max="20" step="1"
+                                            class="w-[80%] h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-[#A271F2]">
                                         <span
-                                            class="bg-[#A271F2] text-white flex xmd:w-8 w-6 xmd:h-8 h-6 xmd:text-base text-sm items-center justify-center rounded-md">20</span>
+                                            class="bg-[#A271F2] text-white flex xmd:w-8 w-[2rem] xmd:h-8 h-[2rem] xmd:text-base text-sm items-center justify-center rounded-md">20</span>
                                     </div>
                                 </div>
                                 <div class="statik-blcok mt-4 py-2 px-4">
@@ -149,7 +149,7 @@
                                     </div>
                                     <div class="control1 flex justify-between items-center">
 
-                                        <input value="0" id="dizaynmurekb" onchange="hesabla()" type="range" min="1"
+                                        <input value="0" id="murekbdizayn" onchange="hesabla()" type="range" min="1"
                                             max="3" step="1"
                                             class="w-[100%] mb-4 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-[#A271F2]">
 
@@ -170,7 +170,8 @@
                                     <div class="flex justify-between items-center md:w-[48%] ">
                                         <span class="text-[18px] font-semibold text-gray-900">Bloq</span>
                                         <label class="relative inline-block w-11 h-6">
-                                            <input onchange="goelave()"   value="200" id="bloq" type="checkbox" class="sr-only peer" />
+                                            <input onchange="goelave()" value="200" id="bloq" type="checkbox"
+                                                class="sr-only peer" />
                                             <div
                                                 class="w-full h-full bg-gray-200 peer peer-checked:bg-[#A271F2]  rounded-full peer peer-checked:bg-#A271F2 transition-colors duration-300">
                                             </div>
@@ -182,19 +183,26 @@
 
 
                                     <div class="flex justify-between items-center md:w-[48%] peer-checked:bg-red-500">
-                                        <span class="text-[18px] font-semibold text-gray-900">Üzv girişi / Profillər</span>
+                                        <span class="text-[18px] font-semibold text-gray-900">Üzv girişi /
+                                            Profillər</span>
                                         <label class="relative inline-block w-11 h-6">
-                                          <input onchange="goelave()" value="400" id="profiller" type="checkbox" class="peer sr-only" />
-                                          <div class="w-full h-full bg-gray-200 peer peer-checked:bg-[#A271F2]  rounded-full peer peer-checked:bg-#A271F2 transition-colors duration-300"></div>
-                                          <div class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full"></div>
+                                            <input onchange="goelave()" value="400" id="profiller" type="checkbox"
+                                                class="peer sr-only" />
+                                            <div
+                                                class="w-full h-full bg-gray-200 peer peer-checked:bg-[#A271F2]  rounded-full peer peer-checked:bg-#A271F2 transition-colors duration-300">
+                                            </div>
+                                            <div
+                                                class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full">
+                                            </div>
                                         </label>
-                                      </div>
-                                      
+                                    </div>
+
 
                                     <div class="flex justify-between items-center md:w-[48%]">
                                         <span class="text-[18px] font-semibold text-gray-900">Responsive</span>
                                         <label class="relative inline-block w-11 h-6">
-                                            <input profiller id="respansiv" onchange="goelave()" value="400"  type="checkbox" class="peer sr-only" />
+                                            <input profiller id="respansiv" onchange="goelave()" value="400"
+                                                type="checkbox" class="peer sr-only" />
                                             <div
                                                 class="w-full  peer peer-checked:bg-[#A271F2]  h-full bg-gray-200 rounded-full peer peer-checked:bg-#A271F2 transition-colors duration-300">
                                             </div>
@@ -207,7 +215,8 @@
                                     <div class="flex justify-between items-center md:w-[48%]">
                                         <span class="text-[18px] font-semibold text-gray-900">Forum</span>
                                         <label class="relative inline-block w-11 h-6">
-                                            <input  id="form" onchange="goelave()" value="400" type="checkbox" class="peer sr-only" />
+                                            <input id="form" onchange="goelave()" value="400" type="checkbox"
+                                                class="peer sr-only" />
                                             <div
                                                 class="w-full peer peer-checked:bg-[#A271F2]  h-full bg-gray-200 rounded-full peer peer-checked:bg-#A271F2 transition-colors duration-300">
                                             </div>
@@ -220,7 +229,8 @@
                                     <div class="flex justify-between items-center md:w-[48%]">
                                         <span class="text-[18px] font-semibold text-gray-900">Mesajlaşma</span>
                                         <label class="relative inline-block w-11 h-6">
-                                            <input id="mesaj" onchange="goelave()" value="50" type="checkbox" class="peer sr-only" />
+                                            <input id="mesaj" onchange="goelave()" value="50" type="checkbox"
+                                                class="peer sr-only" />
                                             <div
                                                 class="w-full h-full peer peer-checked:bg-[#A271F2]   bg-gray-200 rounded-full peer peer-checked:bg-#A271F2 transition-colors duration-300">
                                             </div>
@@ -233,7 +243,8 @@
                                     <div class="flex justify-between items-center md:w-[48%]">
                                         <span class="text-[18px] font-semibold text-gray-900">Canlı Söhbət</span>
                                         <label class="relative inline-block w-11 h-6">
-                                            <input id="canlisohbet"  onchange="goelave()" value="50" type="checkbox" class="peer sr-only" />
+                                            <input id="canlisohbet" onchange="goelave()" value="50" type="checkbox"
+                                                class="peer sr-only" />
                                             <div
                                                 class="w-full h-full peer peer-checked:bg-[#A271F2]  bg-gray-200 rounded-full peer peer-checked:bg-#A271F2 transition-colors duration-300">
                                             </div>
@@ -246,7 +257,8 @@
                                     <div class="flex justify-between items-center md:w-[48%]">
                                         <span class="text-[18px] font-semibold text-gray-900">Qalareya</span>
                                         <label class="relative inline-block w-11 h-6">
-                                            <input id="qalareya" onchange="goelave()" value="100" type="checkbox" class="peer sr-only" />
+                                            <input id="qalareya" onchange="goelave()" value="100" type="checkbox"
+                                                class="peer sr-only" />
                                             <div
                                                 class="w-full h-full peer peer-checked:bg-[#A271F2]  bg-gray-200 rounded-full peer peer-checked:bg-#A271F2 transition-colors duration-300">
                                             </div>
@@ -259,7 +271,8 @@
                                         <span class="text-[18px] font-semibold text-gray-900">
                                             Əlaqə Forması</span>
                                         <label class="relative inline-block w-11 h-6">
-                                            <input id="elaqeforma" onchange="goelave()" value="100" type="checkbox" class="peer sr-only" />
+                                            <input id="elaqeforma" onchange="goelave()" value="100" type="checkbox"
+                                                class="peer sr-only" />
                                             <div
                                                 class="w-full h-full peer peer-checked:bg-[#A271F2]  bg-gray-200 rounded-full peer peer-checked:bg-#A271F2 transition-colors duration-300">
                                             </div>
@@ -271,7 +284,8 @@
                                     <div class="flex justify-between items-center md:w-[48%]">
                                         <span class="text-[18px] font-semibold text-gray-900">Saytda Axtarış</span>
                                         <label class="relative inline-block w-11 h-6">
-                                            <input id="saytaxtir" onchange="goelave()" value="100" type="checkbox" class="peer sr-only" />
+                                            <input id="saytaxtir" onchange="goelave()" value="100" type="checkbox"
+                                                class="peer sr-only" />
                                             <div
                                                 class="w-full h-full peer peer-checked:bg-[#A271F2]  bg-gray-200 rounded-full peer peer-checked:bg-#A271F2 transition-colors duration-300">
                                             </div>
@@ -284,7 +298,8 @@
                                         <span class="text-[18px] font-semibold text-gray-900">
                                             Xəritə Məlumatı / Geolocation</span>
                                         <label class="relative inline-block w-11 h-6">
-                                            <input id="xerite" onchange="goelave()" value="100" type="checkbox" class="peer sr-only" />
+                                            <input id="xerite" onchange="goelave()" value="100" type="checkbox"
+                                                class="peer sr-only" />
                                             <div
                                                 class="w-full peer peer-checked:bg-[#A271F2]  h-full bg-gray-200 rounded-full peer peer-checked:bg-#A271F2 transition-colors duration-300">
                                             </div>
@@ -297,7 +312,8 @@
                                         <span class="text-[18px] font-semibold text-gray-900">
                                             Rezervarsyon</span>
                                         <label class="relative inline-block w-11 h-6">
-                                            <input id="rezerv" onchange="goelave()" value="100" type="checkbox" class="peer sr-only" />
+                                            <input id="rezerv" onchange="goelave()" value="100" type="checkbox"
+                                                class="peer sr-only" />
                                             <div
                                                 class="w-full peer peer-checked:bg-[#A271F2]   h-full bg-gray-200 rounded-full peer peer-checked:bg-[#A271F2] transition-colors duration-300">
                                             </div>
@@ -311,7 +327,8 @@
 
                                             Sosial Media inteqrasiyası</span>
                                         <label class="relative inline-block w-11 h-6">
-                                            <input id="socialmedia" onchange="goelave()" value="50" type="checkbox" class="peer sr-only" />
+                                            <input id="socialmedia" onchange="goelave()" value="50" type="checkbox"
+                                                class="peer sr-only" />
                                             <div
                                                 class="w-full peer peer-checked:bg-[#A271F2]  h-full bg-gray-200 rounded-full peer peer-checked:bg-#A271F2 transition-colors duration-300">
                                             </div>
@@ -325,7 +342,8 @@
 
                                             Analika / İzləmə</span>
                                         <label class="relative inline-block w-11 h-6">
-                                            <input id="analtikiz" onchange="goelave()" value="50" type="checkbox" class="peer sr-only" />
+                                            <input id="analtikiz" onchange="goelave()" value="50" type="checkbox"
+                                                class="peer sr-only" />
                                             <div
                                                 class="w-full peer peer-checked:bg-[#A271F2]  h-full bg-gray-200 rounded-full peer peer-checked:bg-#A271F2 transition-colors duration-300">
                                             </div>
@@ -339,7 +357,8 @@
 
                                             Admin panel</span>
                                         <label class="relative inline-block w-11 h-6">
-                                            <input id="adminpanel" value="300" onchange="goelave()" type="checkbox" class="peer sr-only" />
+                                            <input id="adminpanel" value="300" onchange="goelave()" type="checkbox"
+                                                class="peer sr-only" />
                                             <div
                                                 class="w-full h-full peer peer-checked:bg-[#A271F2]  bg-gray-200 rounded-full peer peer-checked:bg-#A271F2 transition-colors duration-300">
                                             </div>
@@ -355,131 +374,176 @@
                             </div>
 
                             <div class="son-netice flex justify-between items-center py-4 px-4 bg-[#4a84bf26]">
-                                <p  class="text-[#285a70] text-[19px]">Xərc :</p>
-                                <p id="əlavələrntc" class="text-[#A271F2] text-[20px] font-semibold">  ₼ </p>
+                                <p class="text-[#285a70] text-[19px]">Xərc :</p>
+                                <p id="əlavələrntc" class="text-[#A271F2] text-[20px] font-semibold"> ₼ </p>
                             </div>
                         </div>
-                       
-                        
+
+
                         <div class="mb-10">
-                            <h3 class="text-[#212529] text-lg font-semibold mt-3">Axtarış motorunun optimallaşdırılması</h3>
+                            <h3 class="text-[#212529] text-lg font-semibold mt-3">Axtarış motorunun optimallaşdırılması
+                            </h3>
                             <div class="statik-sehife pt-5 bg-[#f8f8fa] mt-2 rounded-md overflow-hidden">
-                              <div class="statik-blcok flex flex-col md:flex-row gap-4 py-2 mb-4 px-4">
-                                <!-- Sol sütun -->
-                                <div class="yoxlanis flex flex-col md:w-1/2 gap-5 py-2">
-                                  <div class="flex items-center gap-2">
-                                    <input onchange="elavego()" type="checkbox" value="200" id="meta" class="transition-all duration-500 h-5 w-5">
-                                    <label for="meta" class="text-[18px] font-semibold text-gray-700 cursor-pointer select-none">Başlıqlar & Meta</label>
-                                  </div>
-                          
-                                  <div class="flex items-center gap-2">
-                                    <input onchange="elavego()" type="checkbox" value="300"  id="qabaqciltexn" class="transition-all duration-500 h-5 w-5">
-                                    <label for="qabaqciltexn" class="text-[18px] font-semibold text-gray-700 cursor-pointer select-none">+20 Qabaqcıl Texnika</label>
-                                  </div>
-                          
-                                  <div class="flex items-center gap-2">
-                                    <input onchange="elavego()" type="checkbox" value="100"  id="sitemap" class="transition-all duration-500 h-5 w-5">
-                                    <label for="sitemap" class="text-[18px] font-semibold text-gray-700 cursor-pointer select-none">Sitemap</label>
-                                  </div>
+                                <div class="statik-blcok flex flex-col md:flex-row gap-4 py-2 mb-4 px-4">
+                                    <!-- Sol sütun -->
+                                    <div class="yoxlanis flex flex-col md:w-1/2 gap-5 py-2">
+                                        <div class="flex items-center gap-2">
+                                            <input onchange="elavego()" type="checkbox" value="200" id="meta"
+                                                class="transition-all duration-500 h-5 w-5">
+                                            <label for="meta"
+                                                class="text-[18px] font-semibold text-gray-700 cursor-pointer select-none">Başlıqlar
+                                                & Meta</label>
+                                        </div>
+
+                                        <div class="flex items-center gap-2">
+                                            <input onchange="elavego()" type="checkbox" value="300" id="qabaqciltexn"
+                                                class="transition-all duration-500 h-5 w-5">
+                                            <label for="qabaqciltexn"
+                                                class="text-[18px] font-semibold text-gray-700 cursor-pointer select-none">+20
+                                                Qabaqcıl Texnika</label>
+                                        </div>
+
+                                        <div class="flex items-center gap-2">
+                                            <input onchange="elavego()" type="checkbox" value="100" id="sitemap"
+                                                class="transition-all duration-500 h-5 w-5">
+                                            <label for="sitemap"
+                                                class="text-[18px] font-semibold text-gray-700 cursor-pointer select-none">Sitemap</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Sağ sütun -->
+                                    <div class="yoxlanis flex flex-col md:w-1/2 gap-5 py-2">
+                                        <div class="flex items-center gap-2">
+                                            <input onchange="elavego()" type="checkbox" id="acarsoz" value="300"
+                                                class="transition-all duration-500 h-5 w-5">
+                                            <label for="acarsoz"
+                                                class="text-[18px] font-semibold text-gray-700 cursor-pointer select-none">Açar
+                                                söz</label>
+                                        </div>
+
+                                        <div class="flex items-center gap-2">
+                                            <input onchange="elavego()" type="checkbox" id="basliqteq" value="100"
+                                                class="transition-all duration-500 h-5 w-5">
+                                            <label for="basliqteq"
+                                                class="text-[18px] font-semibold text-gray-700 cursor-pointer select-none">Başlıq
+                                                teqləri</label>
+                                        </div>
+                                    </div>
                                 </div>
-                          
-                                <!-- Sağ sütun -->
-                                <div class="yoxlanis flex flex-col md:w-1/2 gap-5 py-2">
-                                  <div class="flex items-center gap-2">
-                                    <input onchange="elavego()" type="checkbox" id="acarsoz" value="300" class="transition-all duration-500 h-5 w-5">
-                                    <label for="acarsoz" class="text-[18px] font-semibold text-gray-700 cursor-pointer select-none">Açar söz</label>
-                                  </div>
-                          
-                                  <div class="flex items-center gap-2">
-                                    <input onchange="elavego()" type="checkbox" id="basliqteq" value="100" class="transition-all duration-500 h-5 w-5">
-                                    <label for="basliqteq" class="text-[18px] font-semibold text-gray-700 cursor-pointer select-none">Başlıq teqləri</label>
-                                  </div>
-                                </div>
-                              </div>
                             </div>
-                          
+
                             <div class="son-netice flex justify-between items-center py-4 px-4 bg-[#4a84bf26]">
-                              <p class="text-[#285a70] text-[19px]">Xərc :</p>
-                              <p id="elavesayt" class="text-[#A271F2] text-[20px] font-semibold"> ₼ 0</p>
+                                <p class="text-[#285a70] text-[19px]">Xərc :</p>
+                                <p id="elavesayt" class="text-[#A271F2] text-[20px] font-semibold"> ₼ 0</p>
                             </div>
-                          </div>
+                        </div>
 
                         <div class="mb-10">
                             <h3 class="text-[#212529] text-lg font-medium">Elektron ticarət əlavələri</h3>
                             <div class="statik-sehife pt-5 bg-[#f8f8fa] mt-2 lg rounded-md overflow-hidden">
-                              <div class="statik-blcok flex flex-col md:flex-row  gap-4 py-4 mb-4 px-4">
-                                <!-- Sol sütun -->
-                                <div class="flex flex-col gap-4 md:w-1/2">
-                                  <div class="flex justify-between items-center w-full">
-                                    <span class="text-[18px] font-semibold text-gray-900">Ödəniş</span>
-                                    <label class="relative inline-block w-11 h-6">
-                                      <input id="odenis" value="200" onchange="ticaretgo()" type="checkbox" class="peer sr-only" />
-                                      <div class="w-full peer peer-checked:bg-[#A271F2]  h-full bg-gray-200 rounded-full peer peer-checked:bg-#A271F2 transition-colors duration-300"></div>
-                                      <div class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full"></div>
-                                    </label>
-                                  </div>
-                          
-                                  <div class="flex justify-between items-center w-full">
-                                    <span class="text-[18px] font-semibold text-gray-900">Məhsullar</span>
-                                    <label class="relative inline-block w-11 h-6">
-                                      <input  id="mehsullar" value="300" onchange="ticaretgo()" type="checkbox" class="peer sr-only" />
-                                      <div class="w-full peer peer-checked:bg-[#A271F2]  h-full bg-gray-200 rounded-full peer peer-checked:bg-#A271F2 transition-colors duration-300"></div>
-                                      <div class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full"></div>
-                                    </label>
-                                  </div>
-                          
-                                  <div class="flex justify-between items-center w-full">
-                                    <span class="text-[18px] font-semibold text-gray-900">Filtr</span>
-                                    <label class="relative inline-block w-11 h-6">
-                                        <input id="filtr" value="300" onchange="ticaretgo()" type="checkbox" class="peer sr-only" />
-                                        <div class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-[#A271F2] transition-colors duration-300"></div>
-                                        <div class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full"></div>
-                                    </label>
+                                <div class="statik-blcok flex flex-col md:flex-row  gap-4 py-4 mb-4 px-4">
+                                    <!-- Sol sütun -->
+                                    <div class="flex flex-col gap-4 md:w-1/2">
+                                        <div class="flex justify-between items-center w-full">
+                                            <span class="text-[18px] font-semibold text-gray-900">Ödəniş</span>
+                                            <label class="relative inline-block w-11 h-6">
+                                                <input id="odenis" value="200" onchange="ticaretgo()" type="checkbox"
+                                                    class="peer sr-only" />
+                                                <div
+                                                    class="w-full peer peer-checked:bg-[#A271F2]  h-full bg-gray-200 rounded-full peer peer-checked:bg-#A271F2 transition-colors duration-300">
+                                                </div>
+                                                <div
+                                                    class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full">
+                                                </div>
+                                            </label>
+                                        </div>
+
+                                        <div class="flex justify-between items-center w-full">
+                                            <span class="text-[18px] font-semibold text-gray-900">Məhsullar</span>
+                                            <label class="relative inline-block w-11 h-6">
+                                                <input id="mehsullar" value="300" onchange="ticaretgo()" type="checkbox"
+                                                    class="peer sr-only" />
+                                                <div
+                                                    class="w-full peer peer-checked:bg-[#A271F2]  h-full bg-gray-200 rounded-full peer peer-checked:bg-#A271F2 transition-colors duration-300">
+                                                </div>
+                                                <div
+                                                    class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full">
+                                                </div>
+                                            </label>
+                                        </div>
+
+                                        <div class="flex justify-between items-center w-full">
+                                            <span class="text-[18px] font-semibold text-gray-900">Filtr</span>
+                                            <label class="relative inline-block w-11 h-6">
+                                                <input id="filtr" value="300" onchange="ticaretgo()" type="checkbox"
+                                                    class="peer sr-only" />
+                                                <div
+                                                    class="w-full h-full bg-gray-200 rounded-full peer peer-checked:bg-[#A271F2] transition-colors duration-300">
+                                                </div>
+                                                <div
+                                                    class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full">
+                                                </div>
+                                            </label>
+                                        </div>
+
+                                    </div>
+
+                                    <!-- Sağ sütun -->
+                                    <div class="flex flex-col gap-4 md:w-1/2">
+                                        <div class="flex justify-between items-center w-full">
+                                            <span class="text-[18px] font-semibold text-gray-900">Səbət</span>
+                                            <label class="relative inline-block w-11 h-6">
+                                                <input id="sebet" value="500" onchange="ticaretgo()" type="checkbox"
+                                                    class="peer sr-only" />
+                                                <div
+                                                    class="w-full peer peer-checked:bg-[#A271F2]   h-full bg-gray-200 rounded-full peer peer-checked:bg-#A271F2 transition-colors duration-300">
+                                                </div>
+                                                <div
+                                                    class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full">
+                                                </div>
+                                            </label>
+                                        </div>
+
+                                        <div class="flex justify-between items-center w-full">
+                                            <span class="text-[18px] font-semibold text-gray-900">Bəyəndiklərim</span>
+                                            <label class="relative inline-block w-11 h-6">
+                                                <input id="like" value="300" onchange="ticaretgo()" type="checkbox"
+                                                    class="peer sr-only" />
+                                                <div
+                                                    class="w-full peer peer-checked:bg-[#A271F2]   h-full bg-gray-200 rounded-full peer peer-checked:bg-#A271F2 transition-colors duration-300">
+                                                </div>
+                                                <div
+                                                    class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full">
+                                                </div>
+                                            </label>
+                                        </div>
+
+                                        <div class="flex justify-between items-center w-full">
+                                            <span class="text-[18px] font-semibold text-gray-900">Məhsul Haqqında</span>
+                                            <label class="relative inline-block w-11 h-6">
+                                                <input id="mehsulhaqq" value="200" onchange="ticaretgo()"
+                                                    type="checkbox" class="peer sr-only" />
+                                                <div
+                                                    class="w-full peer peer-checked:bg-[#A271F2]  h-full bg-gray-200 rounded-full peer peer-checked:bg-#A271F2 transition-colors duration-300">
+                                                </div>
+                                                <div
+                                                    class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full">
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
                                 </div>
-                                
-                                </div>
-                          
-                                <!-- Sağ sütun -->
-                                <div class="flex flex-col gap-4 md:w-1/2">
-                                  <div class="flex justify-between items-center w-full">
-                                    <span class="text-[18px] font-semibold text-gray-900">Səbət</span>
-                                    <label class="relative inline-block w-11 h-6">
-                                      <input id="sebet" value="500" onchange="ticaretgo()" type="checkbox" class="peer sr-only" />
-                                      <div class="w-full peer peer-checked:bg-[#A271F2]   h-full bg-gray-200 rounded-full peer peer-checked:bg-#A271F2 transition-colors duration-300"></div>
-                                      <div class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full"></div>
-                                    </label>
-                                  </div>
-                          
-                                  <div class="flex justify-between items-center w-full">
-                                    <span class="text-[18px] font-semibold text-gray-900">Bəyəndiklərim</span>
-                                    <label class="relative inline-block w-11 h-6">
-                                      <input id="like" value="300" onchange="ticaretgo()" type="checkbox" class="peer sr-only" />
-                                      <div class="w-full peer peer-checked:bg-[#A271F2]   h-full bg-gray-200 rounded-full peer peer-checked:bg-#A271F2 transition-colors duration-300"></div>
-                                      <div class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full"></div>
-                                    </label>
-                                  </div>
-                          
-                                  <div class="flex justify-between items-center w-full">
-                                    <span class="text-[18px] font-semibold text-gray-900">Məhsul Haqqında</span>
-                                    <label class="relative inline-block w-11 h-6">
-                                      <input id="mehsulhaqq" value="200" onchange="ticaretgo()" type="checkbox" class="peer sr-only" />
-                                      <div class="w-full peer peer-checked:bg-[#A271F2]  h-full bg-gray-200 rounded-full peer peer-checked:bg-#A271F2 transition-colors duration-300"></div>
-                                      <div class="absolute top-0.5 left-0.5 w-5 h-5 bg-white border border-gray-300 rounded-full transition-transform duration-300 transform peer-checked:translate-x-full"></div>
-                                    </label>
-                                  </div>
-                                </div>
-                              </div>
                             </div>
-                          
+
                             <div class="son-netice flex justify-between items-center py-4 px-4 bg-[#4a84bf26]">
-                              <p id="ntc" class="text-[#285a70] text-[19px]">Xərc :</p>
-                              <p id="ticntc" class="text-[#A271F2] text-[20px] font-semibold">₼ 0</p>
+                                <p id="ntc" class="text-[#285a70] text-[19px]">Xərc :</p>
+                                <p id="ticntc" class="text-[#A271F2] text-[20px] font-semibold">₼ 0</p>
                             </div>
-                          </div>
-                          
-                          
-                          
-                          
+                        </div>
+
+
+
+
 
                         <div class="mb-10 ">
                             <h3 class="text-[#212529]  text-lg font-medium">Logo dizaynı</h3>
@@ -493,13 +557,15 @@
                                     </div>
                                     <div class="control1 flex justify-between items-center">
 
-                                        <input value="1" id="dizaynim" onchange="dizayngo()" type="range" min="1" max="3" step="1"  class="w-[100%] mb-4 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-[#A271F2]">
+                                        <input value="1" id="dizaynim" onchange="dizayngo()" type="range" min="1"
+                                            max="3" step="1"
+                                            class="w-[100%] mb-4 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-[#A271F2]">
 
                                     </div>
                                 </div>
                                 <div class="son-netice  flex justify-between items-center py-4 px-4 bg-[#4a84bf26]">
                                     <p id="ntc" class="text-[#285a70] text-[19px]">Xərc :</p>
-                                    <p id="dizaynlogo" class="text-[#A271F2] text-[20px] font-semibold">   ₼ 0
+                                    <p id="dizaynlogo" class="text-[#A271F2] text-[20px] font-semibold"> ₼ 0
                                     </p>
                                 </div>
                             </div>
@@ -508,29 +574,30 @@
                     </div>
 
                 </div>
-                <div class="teklifler lg:w-1/3 w-full h-full sticky top-0 min-h-[50vh] flex flex-col justify-between">
+                <div class="teklifler lg:w-1/3 w-full h-full sticky top-0 min-h-[50vh] flex flex-col mb-8 justify-between">
                     <div class="flex flex-col gap-4 p-8 bg-white">
                         <p class="text-[19px] font-semibold">Təklifiniz</p>
                         <p class="flex flex-row justify-between items-center"><span class="text-[#8b8b9a]">Statik
-                                səhifələr :</span><span class="text-[#A271F2] font-bold text-lg">₼0</span></p>
-                        <p  class="flex flex-row justify-between items-center"><span class="text-[#8b8b9a]">Əlavələr
-                                :</span><span id="elavem" class="text-[#A271F2] font-bold text-lg ">₼ 0</span></p>
-                        <p class="flex flex-row justify-between items-center"><span  class="text-[#8b8b9a]">SEO
+                                səhifələr :</span><span id="statiksehntc" class="text-[#A271F2] font-bold text-lg">₼0</span></p>
+                        <p class="flex flex-row justify-between items-center"><span class="text-[#8b8b9a]">Əlavələr
+                                :</span><span id="elavem" class="text-[#A271F2] font-bold text-lg  ">₼ 0</span></p>
+                        <p class="flex flex-row justify-between items-center"><span class="text-[#8b8b9a]">SEO
                                 :</span><span class="text-[#A271F2] font-bold text-lg" id="seo">₼ 0</span></p>
                         <p class="flex flex-row justify-between items-center"><span class="text-[#8b8b9a]">E-ticarət
                                 :</span><span class="text-[#A271F2] font-bold text-lg" id="eticaret">₼ 0</span></p>
-                        <p class="flex flex-row justify-between items-center"><span  class="text-[#8b8b9a]">Logo dizaynı
+                        <p class="flex flex-row justify-between items-center"><span class="text-[#8b8b9a]">Logo dizaynı
                                 :</span><span id="logodizayn" class="text-[#A271F2] font-bold text-lg">₼ 0</span></p>
                         <hr>
                         <p class="flex flex-row justify-between items-center gap-4 text-[#8b8b9a] text-base text-right">
                             <span class="font-bold text-lg whitespace-nowrap">Qeyd :</span><span
-                                class="text-base font-semibold">Minimum sayt qiyməti <span  id="umumhesablama"
+                                class="text-base font-semibold">Minimum sayt qiyməti <span id="umumhesablama"
                                     class="text-[#A271F2] whitespace-nowrap">₼ 450</span></span>
                         </p>
                     </div>
 
                     <h3 class="bg-[#a271f2] text-white text-2xl gap-2 p-8 flex flex-row justify-between items-center">
-                        <span>Ümumi təxmini dəyəri:</span><span id="umumideyer" value="450" class="font-semibold whitespace-nowrap"> 450 ₼</span>
+                        <span>Ümumi təxmini dəyəri:</span><span  id="umumideyer" value="450"
+                            class="font-semibold whitespace-nowrap"> 450 ₼</span>
                     </h3>
 
                     <div class="mt-6">
