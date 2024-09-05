@@ -1,4 +1,5 @@
 const mobilemenu = document.getElementById('mobilemenu');
+const mobileDropdown=document.getElementById('mobileDropdown')
 const statiksehife = document.getElementById('statiksehife')
 const murekbdizayn = document.getElementById('murekbdizayn')
 const saytntc = document.getElementById('saytntc')
@@ -21,6 +22,48 @@ let elavegokod = 0
 let ticaretgokod = 0
 let dizayngokod = 0
 let hesablakod = 0
+
+
+function toggleDropdown(dropdownId) {
+   
+    const dropdowns = document.querySelectorAll('.term-scrollbar-dropdown');
+
+    const selectedDropdown = document.getElementById(dropdownId);
+
+    dropdowns.forEach(dropdown => {
+        if (dropdown !== selectedDropdown) {
+            dropdown.style.display = 'none'; 
+        }
+    });
+
+
+    if (selectedDropdown.style.display === 'none' || selectedDropdown.style.display === '') {
+        selectedDropdown.style.display = 'block';
+    } else {
+        selectedDropdown.style.display = 'none';
+    }
+}
+function opendropmobile(dropdownId) {
+   
+    const dropdowns = document.querySelectorAll('.term-scrollbar-dropdown');
+
+    const selectedDropdown = document.getElementById(dropdownId);
+
+    dropdowns.forEach(dropdown => {
+        if (dropdown !== selectedDropdown) {
+            dropdown.style.display = 'none'; 
+        }
+    });
+
+
+    if (selectedDropdown.style.display === 'none' || selectedDropdown.style.display === '') {
+        selectedDropdown.style.display = 'block';
+    } else {
+        selectedDropdown.style.display = 'none';
+    }
+}
+
+
 
 
 

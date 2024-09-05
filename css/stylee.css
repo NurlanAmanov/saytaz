@@ -19,4 +19,16 @@ header{
     background-color: #cce7ff;
    
   }
+  .drop {
+    max-height: 500px;
+    overflow-y: scroll;
+}
 
+.drop::-webkit-scrollbar {
+    width: 5px; 
+}
+
+.drop::-webkit-scrollbar-thumb {
+    background-color: #A271F2; 
+    border-radius: 6px; 
+}

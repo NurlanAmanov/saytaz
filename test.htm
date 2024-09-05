@@ -1,118 +1,289 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <span id="umumideyer" value="450" class="font-semibold whitespace-nowrap">450 ₼</span>
-<div id="əlavələrntc"></div>
-<div id="elavem"></div>
-<div id="elavesayt"></div>
-<div id="seo"></div>
-<div id="ticntc"></div>
-<div id="eticaret"></div>
-<div id="dizaynlogo"></div>
-<div id="logodizayn"></div>
 
-<script>
-// Əlavə funksiyası
-function goelave() {
-    let kod = 0;
-    if (adminpanel.checked) kod += +adminpanel.value;
-    if (bloq.checked) kod += +bloq.value;
-    if (profiller.checked) kod += +profiller.value;
-    if (respansiv.checked) kod += +respansiv.value;
-    if (analtikiz.checked) kod += +analtikiz.value;
-    if (socialmedia.checked) kod += +socialmedia.value;
-    if (rezerv.checked) kod += +rezerv.value;
-    if (xerite.checked) kod += +xerite.value;
-    if (elaqeforma.checked) kod += +elaqeforma.value;
-    if (qalareya.checked) kod += +qalareya.value;
-    if (canlisohbet.checked) kod += +canlisohbet.value;
-    if (mesaj.checked) kod += +mesaj.value;
-    if (form.checked) kod += +form.value;
-    if (saytaxtir.checked) kod += +saytaxtir.value;
+<nav class="container sm:gap-4 gap-3 flex justify-between h-16 mx-auto">
+    <a rel="noopener noreferrer" href="#" aria-label="Back to homepage" class="flex items-center p-2">
+        <img src="img/saytaz.svg " alt="">
+    </a>
+    <ul class="items-stretch hidden text-[1.3em] font-semibold lg:flex text-[#300b60] ">
 
-    // Nəticələri ekrana yazırıq
-    əlavələrntc.innerHTML = "₼ " + kod;
-    elavem.innerHTML = "₼ " + kod;
+        <li class="flex">
+            <a rel="noopener noreferrer" href="#" onclick="toggleDropdown('webDropdown')"
+                class="flex items-center px-2 -mb-1">Veb sayt <svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"
+                    class="w-5 mx-[8px] h-5 group-hover:text-[#A271F2]">
+                    <path fill-rule="evenodd"
+                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                        clip-rule="evenodd"></path>
+                </svg></a>
 
-    return kod;
-}
+            <ul id="webDropdown" style="display: none;"
+                class="drop term-scrollbar-dropdown  mt-4 flex absolute left-[6rem] top-[5rem] z-[99]  lg:ml-8 md:-ml-8 -ml-3 bg-white flex-col md:py-4 py-2 text-black border border-slate-200 rounded-lg box-border md:min-w-[340px] lg:max-w-none md:max-w-[380px] max-w-[340px]">
+                <div
+                    class="flex items-center px-2 sm:px-8 md:pl-8 py-3 md:pr-12 lg:pr-4 cursor-pointer hover:bg-slate-50">
+                    <div class="hidden md:block p-3 bg-blue-100 rounded-lg mr-4"><img alt="navbar-icon"
+                            fetchpriority="high" width="28" height="28" decoding="async" data-nimg="1"
+                            class="max-w-[28px]"
+                            src="https://api.websiteca.com/storage/lJ9i3mHSrGbIyOFk6VnqpcyzeZgiKmjyiUfdEhAc.svg"
+                            style="color: transparent;"></div>
+                    <div class="flex flex-col">
+                        <p class="text-slate-700 font-medium text-base lg:w-max">Hökumət və qeyri-kommersiya
+                            saytları</p>
+                        <p
+                            class="text-slate-500 md:text-sm text-xs lg:w-max md:max-w-[400px] max-w-[320px] md:line-clamp-2">
+                            Hökumət və qeyri-kommersiya saytları</p>
+                    </div>
+                </div>
+                <div
+                    class="flex items-center px-2 sm:px-8 md:pl-8 py-3 md:pr-12 lg:pr-4 cursor-pointer hover:bg-slate-50">
+                    <div class="hidden md:block p-3 bg-blue-100 rounded-lg mr-4"><img alt="navbar-icon"
+                            fetchpriority="high" width="28" height="28" decoding="async" data-nimg="1"
+                            class="max-w-[28px]"
+                            src="https://api.websiteca.com/storage/fcdQoEskESpjwrkLUcNKqvm0ZFwzn7kAspkBfwI5.svg"
+                            style="color: transparent;"></div>
+                    <div class="flex flex-col">
+                        <p class="text-slate-700 font-medium text-base lg:w-max">Kiçik biznes saytları</p>
+                        <p
+                            class="text-slate-500 md:text-sm text-xs lg:w-max md:max-w-[400px] max-w-[320px] md:line-clamp-2">
+                            Kiçik bizneslər üçün saytlar</p>
+                    </div>
+                </div>
+                <div
+                    class="flex items-center px-2 sm:px-8 md:pl-8 py-3 md:pr-12 lg:pr-4 cursor-pointer hover:bg-slate-50">
+                    <div class="hidden md:block p-3 bg-blue-100 rounded-lg mr-4"><img alt="navbar-icon"
+                            fetchpriority="high" width="28" height="28" decoding="async" data-nimg="1"
+                            class="max-w-[28px]"
+                            src="https://api.websiteca.com/storage/vQyageZW9Eb4rKazAWwrY3xUTem15TN9Ofdk8oUk.svg"
+                            style="color: transparent;"></div>
+                    <div class="flex flex-col">
+                        <p class="text-slate-700 font-medium text-base lg:w-max">E-ticarət saytları</p>
+                        <p
+                            class="text-slate-500 md:text-sm text-xs lg:w-max md:max-w-[400px] max-w-[320px] md:line-clamp-2">
+                            E-ticarət saytları</p>
+                    </div>
+                </div>
+                <div
+                    class="flex items-center px-2 sm:px-8 md:pl-8 py-3 md:pr-12 lg:pr-4 cursor-pointer hover:bg-slate-50">
+                    <div class="hidden md:block p-3 bg-blue-100 rounded-lg mr-4"><img alt="navbar-icon"
+                            fetchpriority="high" width="28" height="28" decoding="async" data-nimg="1"
+                            class="max-w-[28px]"
+                            src="https://api.websiteca.com/storage/otN2FW4K7vPTfJRqYOqYJMRj1VZDil02yYCmA0mx.svg"
+                            style="color: transparent;"></div>
+                    <div class="flex flex-col">
+                        <p class="text-slate-700 font-medium text-base lg:w-max">Hüquq firma saytı</p>
+                        <p
+                            class="text-slate-500 md:text-sm text-xs lg:w-max md:max-w-[400px] max-w-[320px] md:line-clamp-2">
+                            Hüquq firma saytı</p>
+                    </div>
+                </div>
+                <div
+                    class="flex items-center px-2 sm:px-8 md:pl-8 py-3 md:pr-12 lg:pr-4 cursor-pointer hover:bg-slate-50">
+                    <div class="hidden md:block p-3 bg-blue-100 rounded-lg mr-4"><img alt="navbar-icon"
+                            fetchpriority="high" width="28" height="28" decoding="async" data-nimg="1"
+                            class="max-w-[28px]"
+                            src="https://api.websiteca.com/storage/zJjPDvohOxpgJj7wenVSBaGbTgNOuigFvjxLmhw5.svg"
+                            style="color: transparent;"></div>
+                    <div class="flex flex-col">
+                        <p class="text-slate-700 font-medium text-base lg:w-max">Bloqlar və Şəxsi Vebsayt</p>
+                        <p
+                            class="text-slate-500 md:text-sm text-xs lg:w-max md:max-w-[400px] max-w-[320px] md:line-clamp-2">
+                            Bloqlar və Şəxsi Vebsayt</p>
+                    </div>
+                </div>
+                <div
+                    class="flex items-center px-2 sm:px-8 md:pl-8 py-3 md:pr-12 lg:pr-4 cursor-pointer hover:bg-slate-50">
+                    <div class="hidden md:block p-3 bg-blue-100 rounded-lg mr-4"><img alt="navbar-icon"
+                            fetchpriority="high" width="28" height="28" decoding="async" data-nimg="1"
+                            class="max-w-[28px]"
+                            src="https://api.websiteca.com/storage/RG2ZavDFVNsih7XSr36x2pxKPQxXekuAgO2VXif6.svg"
+                            style="color: transparent;"></div>
+                    <div class="flex flex-col">
+                        <p class="text-slate-700 font-medium text-base lg:w-max">Daşınmaz əmlak veb saytı</p>
+                        <p
+                            class="text-slate-500 md:text-sm text-xs lg:w-max md:max-w-[400px] max-w-[320px] md:line-clamp-2">
+                            Daşınmaz əmlak veb saytı</p>
+                    </div>
+                </div>
+                <div
+                    class="flex items-center px-2 sm:px-8 md:pl-8 py-3 md:pr-12 lg:pr-4 cursor-pointer hover:bg-slate-50">
+                    <div class="hidden md:block p-3 bg-blue-100 rounded-lg mr-4"><img alt="navbar-icon"
+                            fetchpriority="high" width="28" height="28" decoding="async" data-nimg="1"
+                            class="max-w-[28px]"
+                            src="https://api.websiteca.com/storage/khwNG7uXgAPtW9wilTtK12LaUADpZgeQb3UvOqvB.svg"
+                            style="color: transparent;"></div>
+                    <div class="flex flex-col">
+                        <p class="text-slate-700 font-medium text-base lg:w-max">Tibb - Doktor Saytlar</p>
+                        <p
+                            class="text-slate-500 md:text-sm text-xs lg:w-max md:max-w-[400px] max-w-[320px] md:line-clamp-2">
+                            Tibb Doktor Saytlar</p>
+                    </div>
+                </div>
+                <div
+                    class="flex items-center px-2 sm:px-8 md:pl-8 py-3 md:pr-12 lg:pr-4 cursor-pointer hover:bg-slate-50">
+                    <div class="hidden md:block p-3 bg-blue-100 rounded-lg mr-4"><img alt="navbar-icon"
+                            fetchpriority="high" width="28" height="28" decoding="async" data-nimg="1"
+                            class="max-w-[28px]"
+                            src="https://api.websiteca.com/storage/qKRz4fKbiAGalPgCtcAGVuV5AnCAhx8WkRAMdV3L.svg"
+                            style="color: transparent;"></div>
+                    <div class="flex flex-col">
+                        <p class="text-slate-700 font-medium text-base lg:w-max">WordPress Saytları</p>
+                        <p
+                            class="text-slate-500 md:text-sm text-xs lg:w-max md:max-w-[400px] max-w-[320px] md:line-clamp-2">
+                            WordPress Saytları</p>
+                    </div>
+                </div>
+            </ul>
+        </li>
 
-// SEO funksiyası
-function elavego() {
-    let hesab = 0;
-    if (meta.checked) hesab += +meta.value;
-    if (qabaqciltexn.checked) hesab += +qabaqciltexn.value;
-    if (sitemap.checked) hesab += +sitemap.value;
-    if (acarsoz.checked) hesab += +acarsoz.value;
-    if (basliqteq.checked) hesab += +basliqteq.value;
 
-    // Nəticələri ekrana yazırıq
-    elavesayt.innerHTML = "₼ " + hesab;
-    seo.innerHTML = "₼ " + hesab;
+        <li class="flex">
+            <a rel="noopener noreferrer" href="#" onclick="toggleDropdown('domainDropdown')"
+                class="flex items-center px-4 -mb-1">Domen
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                    aria-hidden="true" class="w-5 mx-1  h-5 group-hover:text-[#A271F2]">
+                    <path fill-rule="evenodd"
+                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                        clip-rule="evenodd"></path>
+                </svg></a>
 
-    return hesab;
-}
+            <ul id="domainDropdown" style="display: none;"
+                class="mobileMenuDropdown mt-4 flex absolute left-[16rem] top-[5rem] z-[99] lg:ml-8 md:-ml-8 -ml-3 bg-white flex-col md:py-4 py-2 text-black border border-slate-200 rounded-lg box-border md:min-w-[340px] lg:max-w-none md:max-w-[380px] max-w-[340px]">
+                <div
+                    class="flex items-center px-2 sm:px-8 md:pl-8 py-3 md:pr-12 lg:pr-4 cursor-pointer hover:bg-slate-50">
+                    <div class="hidden md:block p-3 bg-blue-100 rounded-lg mr-4"><img alt="navbar-icon"
+                            fetchpriority="high" width="28" height="28" decoding="async" data-nimg="1"
+                            class="max-w-[28px]" src="/icons/network-browser.svg" style="color: transparent;">
+                    </div>
+                    <div class="flex flex-col">
+                        <p class="text-slate-700 font-medium text-base lg:w-max">Domen</p>
+                        <p
+                            class="text-slate-500 md:text-sm text-xs lg:w-max md:max-w-[400px] max-w-[320px] md:line-clamp-2">
+                            Etibarlı xidmət</p>
+                    </div>
+                </div>
+                <div
+                    class="flex items-center px-2 sm:px-8 md:pl-8 py-3 md:pr-12 lg:pr-4 cursor-pointer hover:bg-slate-50">
+                    <div class="hidden md:block p-3 bg-blue-100 rounded-lg mr-4"><img alt="navbar-icon"
+                            fetchpriority="high" width="28" height="28" decoding="async" data-nimg="1"
+                            class="max-w-[28px]" src="/icons/network-www.svg" style="color: transparent;"></div>
+                    <div class="flex flex-col">
+                        <p class="text-slate-700 font-medium text-base lg:w-max">Pulsuz Domen Qeydiyyatı</p>
+                        <p
+                            class="text-slate-500 md:text-sm text-xs lg:w-max md:max-w-[400px] max-w-[320px] md:line-clamp-2">
+                            Sürətli qeydiyyat</p>
+                    </div>
+                </div>
+            </ul>
+        </li>
 
-// Ticarət funksiyası
-function ticaretgo() {
-    let ticarethesab = 0;
-    if (odenis.checked) ticarethesab += +odenis.value;
-    if (mehsullar.checked) ticarethesab += +mehsullar.value;
-    if (filtr.checked) ticarethesab += +filtr.value;
-    if (sebet.checked) ticarethesab += +sebet.value;
-    if (like.checked) ticarethesab += +like.value;
-    if (mehsulhaqq.checked) ticarethesab += +mehsulhaqq.value;
+        <li class="flex">
+            <a rel="noopener noreferrer" href="#" onclick="toggleDropdown('hostingDropdown')"
+                class="flex items-center px-4 -mb-1">Hostinq</a>
+            <ul id="hostingDropdown" style="display: none;"
+                class="mobileMenuDropdown  mt-4 flex absolute left-[25rem] top-[5rem] z-[99]  lg:ml-8 md:-ml-8 -ml-3 bg-white flex-col md:py-4 py-2 text-black border border-slate-200 rounded-lg box-border md:min-w-[340px] lg:max-w-none md:max-w-[380px] max-w-[340px]">
+                <div
+                    class="flex items-center px-2 sm:px-8 md:pl-8 py-3 md:pr-12 lg:pr-4 cursor-pointer hover:bg-slate-50">
+                    <div class="hidden md:block p-3 bg-blue-100 rounded-lg mr-4"><img alt="navbar-icon"
+                            fetchpriority="high" width="28" height="28" decoding="async" data-nimg="1"
+                            class="max-w-[28px]" src="/icons/hosting-icon.svg" style="color: transparent;">
+                    </div>
+                    <div class="flex flex-col">
+                        <p class="text-slate-700 font-medium text-base lg:w-max">Veb Hostinq</p>
+                        <p
+                            class="text-slate-500 md:text-sm text-xs lg:w-max md:max-w-[400px] max-w-[320px] md:line-clamp-2">
+                            ₼10.00/ay-dan başlayaraq</p>
+                    </div>
+                    
+                </div>
+                <div
+                        class="flex items-center px-2 sm:px-8 md:pl-8 py-3 md:pr-12 lg:pr-4 cursor-pointer hover:bg-slate-50">
+                        <div class="hidden md:block p-3 bg-blue-100 rounded-lg mr-4"><img alt="navbar-icon"
+                                fetchpriority="high" width="28" height="28" decoding="async" data-nimg="1"
+                                class="max-w-[28px]" src="/icons/vps-icon.svg" style="color: transparent;">
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-slate-700 font-medium text-base lg:w-max">VPS</p>
+                            <p
+                                class="text-slate-500 md:text-sm text-xs lg:w-max md:max-w-[400px] max-w-[320px] md:line-clamp-2">
+                                ₼15.00/ay-dan başlayaraq</p>
+                        </div>
+                    </div>
+                <div
+                    class="flex items-center px-2 sm:px-8 md:pl-8 py-3 md:pr-12 lg:pr-4 cursor-pointer hover:bg-slate-50">
+                    <div class="hidden md:block p-3 bg-blue-100 rounded-lg mr-4"><img alt="navbar-icon"
+                            fetchpriority="high" width="28" height="28" decoding="async" data-nimg="1"
+                            class="max-w-[28px]" src="/icons/server-icon.svg" style="color: transparent;"></div>
+                    <div class="flex flex-col">
+                        <p class="text-slate-700 font-medium text-base lg:w-max">Server</p>
+                        <p
+                            class="text-slate-500 md:text-sm text-xs lg:w-max md:max-w-[400px] max-w-[320px] md:line-clamp-2">
+                            99.00/ay-dan başlayaraq</p>
+                    </div>
+                </div>
+            </ul>
+        </li>
 
-    // Nəticələri ekrana yazırıq
-    ticntc.innerHTML = "₼ " + ticarethesab;
-    eticaret.innerHTML = "₼ " + ticarethesab;
 
-    return ticarethesab;
-}
+        <li class="flex">
+            <a rel="noopener noreferrer" href="#" onclick="toggleDropdown('xidmetlerDropdown')" class="flex items-center px-4 -mb-1">
+                Xidmətlər
+            </a>
+            <ul id="xidmetlerDropdown" style="display: none;" class="term-scrollbar-dropdown flex absolute top-[2.5rem] z-[99] lg:ml-8 md:-ml-8 -ml-3 bg-white flex-col md:py-4 py-2 text-black border border-slate-200 rounded-lg box-border md:min-w-[340px] lg:max-w-none md:max-w-[380px] max-w-[340px]">
+                <div class="flex items-center px-2 sm:px-8 md:pl-8 py-3 md:pr-12 lg:pr-4 cursor-pointer hover:bg-slate-50">
+                    <div class="hidden md:block p-3 bg-blue-100 rounded-lg mr-4">
+                        <img alt="navbar-icon" width="28" height="28" class="max-w-[28px]" src="/icons/order-track.svg">
+                    </div>
+                    <div class="flex flex-col">
+                        <p class="text-slate-700 font-medium text-base lg:w-max">Sifarişi izlə</p>
+                        <p class="text-slate-500 md:text-sm text-xs lg:w-max">Sifarişlərinizi İzləyin</p>
+                    </div>
+                </div>
+            </ul>
+        </li>
 
-// Dizayn funksiyası
-function dizayngo() {
-    let artim = +dizaynim.value;
-    let dizaynhesab = (artim - 1) * 100;
 
-    // Nəticələri ekrana yazırıq
-    dizaynlogo.innerHTML = "₼ " + dizaynhesab;
-    logodizayn.innerHTML = "₼ " + dizaynhesab;
+        <li class="flex">
+            <a rel="noopener noreferrer" href="#" onclick="toggleDropdown('sirketDropdown')" class="flex items-center px-4 -mb-1">
+                Şirkət
+            </a>
+            <ul id="sirketDropdown" style="display: none;" class="term-scrollbar-dropdown flex absolute top-[2.5rem] z-[99] lg:ml-8 md:-ml-8 -ml-3 bg-white flex-col md:py-4 py-2 text-black border border-slate-200 rounded-lg box-border md:min-w-[340px] lg:max-w-none md:max-w-[380px] max-w-[340px]">
+                <div class="flex items-center px-2 sm:px-8 md:pl-8 py-3 md:pr-12 lg:pr-4 cursor-pointer hover:bg-slate-50">
+                    <div class="hidden md:block p-3 bg-blue-100 rounded-lg mr-4">
+                        <img alt="navbar-icon" width="28" height="28" class="max-w-[28px]" src="/icons/about-icon.svg">
+                    </div>
+                    <div class="flex flex-col">
+                        <p class="text-slate-700 font-medium text-base lg:w-max">Haqqımızda</p>
+                        <p class="text-slate-500 md:text-sm text-xs lg:w-max">Bizim komanda üzvlərimiz</p>
+                    </div>
+                </div>
+            </ul>
+        </li>
+    </ul>
 
-    return dizaynhesab;
-}
 
-// Ümumi dəyəri yeniləyən funksiya
-function yenileUmumiDeyer() {
-    let esasDeyer = +document.getElementById('umumideyer').getAttribute('value'); // Başlanğıc dəyəri alırıq
+    <div class="deyisenler flex items-center justify-center gap-3">
+        <div class="valuyta  mx-2 flex items-center justify-center ">
+            <select class="text-2xl sm:text-[20px] h-18 font-bold px-1 outline-none">
+                <option value="">₼</option>
+                <option value="">$</option>
+            </select>
+        </div>
+        <div class="dil w-12 flex items-center justify-center">
+            <img src="img/az.png" class="w-8" alt="">
+        </div>
+    </div>
+    <div class="items-center   gap-4 w-[30%] hidden lg:flex">
+        <button
+            class="pt-[.10rem] pb-[.10rem] text-white   text-center px-6 rounded-[8px] btnLspace w-[45%]   h-12 font-bold font-manrope opacity-100 teklifal ">Qiymət
+            təklif al</button>
+        <button
+            class=" pt-[.10rem] pb-[.10rem] text-base bg-white btnLspace text-[#A271F2] border border-[#a271f2]  w-[30%] font-bold text-center border-[#A271F2] rounded-[8px]  h-12 font-manrope opacity-100">Daxil
+            olun</button>
+    </div>
+    <button onclick="menuac()" class="lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            class="w-8 h-8 dark:text-gray-800">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+            </path>
+        </svg>
+    </button>
 
-    let elaveQiymet = goelave(); // Əlavə qiymət
-    let seoQiymet = elavego(); // SEO qiymət
-    let ticaretQiymet = ticaretgo(); // Ticarət qiymət
-    let dizaynQiymet = dizayngo(); // Dizayn qiymət
-
-    let umumiDeyer = esasDeyer + elaveQiymet + seoQiymet + ticaretQiymet + dizaynQiymet;
-
-    // Ümumi dəyəri yeniləyirik
-    document.getElementById('umumideyer').innerHTML = umumiDeyer + " ₼";
-}
-
-// Bütün funksiyaları hər dəyişikliyə görə yeniləyək
-document.querySelectorAll('input[type="checkbox"]').forEach(el => {
-    el.addEventListener('change', yenileUmumiDeyer);
-});
-document.querySelectorAll('input[type="number"]').forEach(el => {
-    el.addEventListener('input', yenileUmumiDeyer);
-});
-
-// Başlanğıcda ümumi dəyəri göstəririk
-yenileUmumiDeyer();
-</script>
-
-</body>
-</html>
+</nav>

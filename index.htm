@@ -23,24 +23,261 @@
                 <img src="img/saytaz.svg " alt="">
             </a>
             <ul class="items-stretch hidden text-[1.3em] font-semibold lg:flex text-[#300b60] ">
+
                 <li class="flex">
-                    <a rel="noopener noreferrer" href="#"
-                        class="flex items-center px-4 -mb-1  dark:text-violet-600 dark:border-violet-600">Veb sayt</a>
+                    <a rel="noopener noreferrer" href="#" onclick="toggleDropdown('webDropdown')"
+                        class="flex items-center px-2 -mb-1">Veb sayt <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"
+                            class="w-5 mx-[8px] h-5 group-hover:text-[#A271F2]">
+                            <path fill-rule="evenodd"
+                                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                clip-rule="evenodd"></path>
+                        </svg></a>
+
+                    <ul id="webDropdown" style="display: none;"
+                        class="drop term-scrollbar-dropdown  mt-4 flex absolute left-[6rem] top-[5rem] z-[99]  lg:ml-8 md:-ml-8 -ml-3 bg-white flex-col md:py-4 py-2 text-black border border-slate-200 rounded-lg box-border md:min-w-[340px] lg:max-w-none md:max-w-[380px] max-w-[340px]">
+                        <div
+                            class="flex items-center px-2 sm:px-8 md:pl-8 py-3 md:pr-12 lg:pr-4 cursor-pointer hover:bg-slate-50">
+                            <div class="hidden md:block p-3 bg-blue-100 rounded-lg mr-4"><img alt="navbar-icon"
+                                    fetchpriority="high" width="28" height="28" decoding="async" data-nimg="1"
+                                    class="max-w-[28px]"
+                                    src="https://api.websiteca.com/storage/lJ9i3mHSrGbIyOFk6VnqpcyzeZgiKmjyiUfdEhAc.svg"
+                                    style="color: transparent;"></div>
+                            <div class="flex flex-col">
+                                <p class="text-slate-700 font-medium text-base lg:w-max">Hökumət və qeyri-kommersiya
+                                    saytları</p>
+                                <p
+                                    class="text-slate-500 md:text-sm text-xs lg:w-max md:max-w-[400px] max-w-[320px] md:line-clamp-2">
+                                    Hökumət və qeyri-kommersiya saytları</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-center px-2 sm:px-8 md:pl-8 py-3 md:pr-12 lg:pr-4 cursor-pointer hover:bg-slate-50">
+                            <div class="hidden md:block p-3 bg-blue-100 rounded-lg mr-4"><img alt="navbar-icon"
+                                    fetchpriority="high" width="28" height="28" decoding="async" data-nimg="1"
+                                    class="max-w-[28px]"
+                                    src="https://api.websiteca.com/storage/fcdQoEskESpjwrkLUcNKqvm0ZFwzn7kAspkBfwI5.svg"
+                                    style="color: transparent;"></div>
+                            <div class="flex flex-col">
+                                <p class="text-slate-700 font-medium text-base lg:w-max">Kiçik biznes saytları</p>
+                                <p
+                                    class="text-slate-500 md:text-sm text-xs lg:w-max md:max-w-[400px] max-w-[320px] md:line-clamp-2">
+                                    Kiçik bizneslər üçün saytlar</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-center px-2 sm:px-8 md:pl-8 py-3 md:pr-12 lg:pr-4 cursor-pointer hover:bg-slate-50">
+                            <div class="hidden md:block p-3 bg-blue-100 rounded-lg mr-4"><img alt="navbar-icon"
+                                    fetchpriority="high" width="28" height="28" decoding="async" data-nimg="1"
+                                    class="max-w-[28px]"
+                                    src="https://api.websiteca.com/storage/vQyageZW9Eb4rKazAWwrY3xUTem15TN9Ofdk8oUk.svg"
+                                    style="color: transparent;"></div>
+                            <div class="flex flex-col">
+                                <p class="text-slate-700 font-medium text-base lg:w-max">E-ticarət saytları</p>
+                                <p
+                                    class="text-slate-500 md:text-sm text-xs lg:w-max md:max-w-[400px] max-w-[320px] md:line-clamp-2">
+                                    E-ticarət saytları</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-center px-2 sm:px-8 md:pl-8 py-3 md:pr-12 lg:pr-4 cursor-pointer hover:bg-slate-50">
+                            <div class="hidden md:block p-3 bg-blue-100 rounded-lg mr-4"><img alt="navbar-icon"
+                                    fetchpriority="high" width="28" height="28" decoding="async" data-nimg="1"
+                                    class="max-w-[28px]"
+                                    src="https://api.websiteca.com/storage/otN2FW4K7vPTfJRqYOqYJMRj1VZDil02yYCmA0mx.svg"
+                                    style="color: transparent;"></div>
+                            <div class="flex flex-col">
+                                <p class="text-slate-700 font-medium text-base lg:w-max">Hüquq firma saytı</p>
+                                <p
+                                    class="text-slate-500 md:text-sm text-xs lg:w-max md:max-w-[400px] max-w-[320px] md:line-clamp-2">
+                                    Hüquq firma saytı</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-center px-2 sm:px-8 md:pl-8 py-3 md:pr-12 lg:pr-4 cursor-pointer hover:bg-slate-50">
+                            <div class="hidden md:block p-3 bg-blue-100 rounded-lg mr-4"><img alt="navbar-icon"
+                                    fetchpriority="high" width="28" height="28" decoding="async" data-nimg="1"
+                                    class="max-w-[28px]"
+                                    src="https://api.websiteca.com/storage/zJjPDvohOxpgJj7wenVSBaGbTgNOuigFvjxLmhw5.svg"
+                                    style="color: transparent;"></div>
+                            <div class="flex flex-col">
+                                <p class="text-slate-700 font-medium text-base lg:w-max">Bloqlar və Şəxsi Vebsayt</p>
+                                <p
+                                    class="text-slate-500 md:text-sm text-xs lg:w-max md:max-w-[400px] max-w-[320px] md:line-clamp-2">
+                                    Bloqlar və Şəxsi Vebsayt</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-center px-2 sm:px-8 md:pl-8 py-3 md:pr-12 lg:pr-4 cursor-pointer hover:bg-slate-50">
+                            <div class="hidden md:block p-3 bg-blue-100 rounded-lg mr-4"><img alt="navbar-icon"
+                                    fetchpriority="high" width="28" height="28" decoding="async" data-nimg="1"
+                                    class="max-w-[28px]"
+                                    src="https://api.websiteca.com/storage/RG2ZavDFVNsih7XSr36x2pxKPQxXekuAgO2VXif6.svg"
+                                    style="color: transparent;"></div>
+                            <div class="flex flex-col">
+                                <p class="text-slate-700 font-medium text-base lg:w-max">Daşınmaz əmlak veb saytı</p>
+                                <p
+                                    class="text-slate-500 md:text-sm text-xs lg:w-max md:max-w-[400px] max-w-[320px] md:line-clamp-2">
+                                    Daşınmaz əmlak veb saytı</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-center px-2 sm:px-8 md:pl-8 py-3 md:pr-12 lg:pr-4 cursor-pointer hover:bg-slate-50">
+                            <div class="hidden md:block p-3 bg-blue-100 rounded-lg mr-4"><img alt="navbar-icon"
+                                    fetchpriority="high" width="28" height="28" decoding="async" data-nimg="1"
+                                    class="max-w-[28px]"
+                                    src="https://api.websiteca.com/storage/khwNG7uXgAPtW9wilTtK12LaUADpZgeQb3UvOqvB.svg"
+                                    style="color: transparent;"></div>
+                            <div class="flex flex-col">
+                                <p class="text-slate-700 font-medium text-base lg:w-max">Tibb - Doktor Saytlar</p>
+                                <p
+                                    class="text-slate-500 md:text-sm text-xs lg:w-max md:max-w-[400px] max-w-[320px] md:line-clamp-2">
+                                    Tibb Doktor Saytlar</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-center px-2 sm:px-8 md:pl-8 py-3 md:pr-12 lg:pr-4 cursor-pointer hover:bg-slate-50">
+                            <div class="hidden md:block p-3 bg-blue-100 rounded-lg mr-4"><img alt="navbar-icon"
+                                    fetchpriority="high" width="28" height="28" decoding="async" data-nimg="1"
+                                    class="max-w-[28px]"
+                                    src="https://api.websiteca.com/storage/qKRz4fKbiAGalPgCtcAGVuV5AnCAhx8WkRAMdV3L.svg"
+                                    style="color: transparent;"></div>
+                            <div class="flex flex-col">
+                                <p class="text-slate-700 font-medium text-base lg:w-max">WordPress Saytları</p>
+                                <p
+                                    class="text-slate-500 md:text-sm text-xs lg:w-max md:max-w-[400px] max-w-[320px] md:line-clamp-2">
+                                    WordPress Saytları</p>
+                            </div>
+                        </div>
+                    </ul>
                 </li>
+
+
                 <li class="flex">
-                    <a rel="noopener noreferrer" href="#" class="flex  items-center px-4 -mb-1 ">
-                        Domen</a>
+                    <a rel="noopener noreferrer" href="#" onclick="toggleDropdown('domainDropdown')"
+                        class="flex items-center px-4 -mb-1">Domen
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            aria-hidden="true" class="w-5 mx-1  h-5 group-hover:text-[#A271F2]">
+                            <path fill-rule="evenodd"
+                                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                clip-rule="evenodd"></path>
+                        </svg></a>
+
+                    <ul id="domainDropdown" style="display: none;"
+                        class="mobileMenuDropdown mt-4 flex absolute left-[16rem] top-[5rem] z-[99] lg:ml-8 md:-ml-8 -ml-3 bg-white flex-col md:py-4 py-2 text-black border border-slate-200 rounded-lg box-border md:min-w-[340px] lg:max-w-none md:max-w-[380px] max-w-[340px]">
+                        <div
+                            class="flex items-center px-2 sm:px-8 md:pl-8 py-3 md:pr-12 lg:pr-4 cursor-pointer hover:bg-slate-50">
+                            <div class="hidden md:block p-3 bg-blue-100 rounded-lg mr-4"><img alt="navbar-icon"
+                                    fetchpriority="high" width="28" height="28" decoding="async" data-nimg="1"
+                                    class="max-w-[28px]" src="/icons/network-browser.svg" style="color: transparent;">
+                            </div>
+                            <div class="flex flex-col">
+                                <p class="text-slate-700 font-medium text-base lg:w-max">Domen</p>
+                                <p
+                                    class="text-slate-500 md:text-sm text-xs lg:w-max md:max-w-[400px] max-w-[320px] md:line-clamp-2">
+                                    Etibarlı xidmət</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-center px-2 sm:px-8 md:pl-8 py-3 md:pr-12 lg:pr-4 cursor-pointer hover:bg-slate-50">
+                            <div class="hidden md:block p-3 bg-blue-100 rounded-lg mr-4"><img alt="navbar-icon"
+                                    fetchpriority="high" width="28" height="28" decoding="async" data-nimg="1"
+                                    class="max-w-[28px]" src="/icons/network-www.svg" style="color: transparent;"></div>
+                            <div class="flex flex-col">
+                                <p class="text-slate-700 font-medium text-base lg:w-max">Pulsuz Domen Qeydiyyatı</p>
+                                <p
+                                    class="text-slate-500 md:text-sm text-xs lg:w-max md:max-w-[400px] max-w-[320px] md:line-clamp-2">
+                                    Sürətli qeydiyyat</p>
+                            </div>
+                        </div>
+                    </ul>
                 </li>
+
                 <li class="flex">
-                    <a rel="noopener noreferrer" href="#" class="flex items-center px-4 -mb-1 ">Hostinq</a>
+                    <a rel="noopener noreferrer" href="#" onclick="toggleDropdown('hostingDropdown')"
+                        class="flex items-center px-4 -mb-1">Hostinq</a>
+                    <ul id="hostingDropdown" style="display: none;"
+                        class="mobileMenuDropdown  mt-4 flex absolute left-[25rem] top-[5rem] z-[99]  lg:ml-8 md:-ml-8 -ml-3 bg-white flex-col md:py-4 py-2 text-black border border-slate-200 rounded-lg box-border md:min-w-[340px] lg:max-w-none md:max-w-[380px] max-w-[340px]">
+                        <div
+                            class="flex items-center px-2 sm:px-8 md:pl-8 py-3 md:pr-12 lg:pr-4 cursor-pointer hover:bg-slate-50">
+                            <div class="hidden md:block p-3 bg-blue-100 rounded-lg mr-4"><img alt="navbar-icon"
+                                    fetchpriority="high" width="28" height="28" decoding="async" data-nimg="1"
+                                    class="max-w-[28px]" src="/icons/hosting-icon.svg" style="color: transparent;">
+                            </div>
+                            <div class="flex flex-col">
+                                <p class="text-slate-700 font-medium text-base lg:w-max">Veb Hostinq</p>
+                                <p
+                                    class="text-slate-500 md:text-sm text-xs lg:w-max md:max-w-[400px] max-w-[320px] md:line-clamp-2">
+                                    ₼10.00/ay-dan başlayaraq</p>
+                            </div>
+                            
+                        </div>
+                        <div
+                                class="flex items-center px-2 sm:px-8 md:pl-8 py-3 md:pr-12 lg:pr-4 cursor-pointer hover:bg-slate-50">
+                                <div class="hidden md:block p-3 bg-blue-100 rounded-lg mr-4"><img alt="navbar-icon"
+                                        fetchpriority="high" width="28" height="28" decoding="async" data-nimg="1"
+                                        class="max-w-[28px]" src="/icons/vps-icon.svg" style="color: transparent;">
+                                </div>
+                                <div class="flex flex-col">
+                                    <p class="text-slate-700 font-medium text-base lg:w-max">VPS</p>
+                                    <p
+                                        class="text-slate-500 md:text-sm text-xs lg:w-max md:max-w-[400px] max-w-[320px] md:line-clamp-2">
+                                        ₼15.00/ay-dan başlayaraq</p>
+                                </div>
+                            </div>
+                        <div
+                            class="flex items-center px-2 sm:px-8 md:pl-8 py-3 md:pr-12 lg:pr-4 cursor-pointer hover:bg-slate-50">
+                            <div class="hidden md:block p-3 bg-blue-100 rounded-lg mr-4"><img alt="navbar-icon"
+                                    fetchpriority="high" width="28" height="28" decoding="async" data-nimg="1"
+                                    class="max-w-[28px]" src="/icons/server-icon.svg" style="color: transparent;"></div>
+                            <div class="flex flex-col">
+                                <p class="text-slate-700 font-medium text-base lg:w-max">Server</p>
+                                <p
+                                    class="text-slate-500 md:text-sm text-xs lg:w-max md:max-w-[400px] max-w-[320px] md:line-clamp-2">
+                                    99.00/ay-dan başlayaraq</p>
+                            </div>
+                        </div>
+                    </ul>
                 </li>
+
+
                 <li class="flex">
-                    <a rel="noopener noreferrer" href="#" class="flex items-center px-4 -mb-1 ">Xidmətlər</a>
+                    <a rel="noopener noreferrer" href="#" onclick="toggleDropdown('xidmetlerDropdown')" class="flex items-center px-4 -mb-1">
+                        Xidmətlər
+                    </a>
+                    <ul id="xidmetlerDropdown"  style="display: none;" class="term-scrollbar-dropdown flex absolute top-[5rem] left-[25rem] z-[99] lg:ml-8 md:-ml-8 -ml-3 bg-white flex-col md:py-4 py-2 text-black border border-slate-200 rounded-lg box-border md:min-w-[340px] lg:max-w-none md:max-w-[380px] max-w-[340px]">
+                        <div class="flex items-center px-2 sm:px-8 md:pl-8 py-3 md:pr-12 lg:pr-4 cursor-pointer hover:bg-slate-50">
+                            <div class="hidden md:block p-3 bg-blue-100 rounded-lg mr-4">
+                                <img alt="navbar-icon" width="28" height="28" class="max-w-[28px]" src="/icons/order-track.svg">
+                            </div>
+                            <div class="flex flex-col">
+                                <p class="text-slate-700 font-medium text-base lg:w-max">Sifarişi izlə</p>
+                                <p class="text-slate-500 md:text-sm text-xs lg:w-max">Sifarişlərinizi İzləyin</p>
+                            </div>
+                        </div>
+                    </ul>
                 </li>
+
+
                 <li class="flex">
-                    <a rel="noopener noreferrer" href="#" class="flex items-center px-4 -mb-1 ">Şirkət</a>
+                    <a rel="noopener noreferrer" href="#" onclick="toggleDropdown('sirketDropdown')" class="flex items-center px-4 -mb-1">
+                        Şirkət
+                    </a>
+                    <ul id="sirketDropdown" style="display: none;" class="term-scrollbar-dropdown flex absolute top-[2.5rem] z-[99] lg:ml-8 md:-ml-8 -ml-3 bg-white flex-col md:py-4 py-2 text-black border border-slate-200 rounded-lg box-border md:min-w-[340px] lg:max-w-none md:max-w-[380px] max-w-[340px]">
+                        <div class="flex items-center px-2 sm:px-8 md:pl-8 py-3 md:pr-12 lg:pr-4 cursor-pointer hover:bg-slate-50">
+                            <div class="hidden md:block p-3 bg-blue-100 rounded-lg mr-4">
+                                <img alt="navbar-icon" width="28" height="28" class="max-w-[28px]" src="/icons/about-icon.svg">
+                            </div>
+                            <div class="flex flex-col">
+                                <p class="text-slate-700 font-medium text-base lg:w-max">Haqqımızda</p>
+                                <p class="text-slate-500 md:text-sm text-xs lg:w-max">Bizim komanda üzvlərimiz</p>
+                            </div>
+                        </div>
+                    </ul>
                 </li>
             </ul>
+
+
             <div class="deyisenler flex items-center justify-center gap-3">
                 <div class="valuyta  mx-2 flex items-center justify-center ">
                     <select class="text-2xl sm:text-[20px] h-18 font-bold px-1 outline-none">
@@ -69,7 +306,8 @@
             </button>
 
         </nav>
-        <div id="mobilemenu" style="display: none;" class="fixed inset-y-0  snap-x right-0 z-50 w-[80%] bg-white sm:px-6 px-2 sm:py-2 py-4 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <div id="mobilemenu" style="display: none;"
+            class="fixed inset-y-0  snap-x right-0 z-50 w-[80%] bg-white sm:px-6 px-2 sm:py-2 py-4 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div class="baqlamenu flex w-full item-end justify-end p-1">
                 <button onclick="closedmenu()" class="lg:hidden">
                     <i class="fa-solid fa-xmark text-2xl font-semibold"></i>
@@ -79,8 +317,127 @@
 
                 <ul
                     class="bg-white text-2xl flex mx-4 w-[90%]   font-semibold gap-3 flex-col items-start justify-start text-[#300b60]">
-                    <li class="my-2 hover:bg-gray-50 h-full p-3 rounded w-full block  hover:text-[#a271f2]"><a
-                            href="#">Veb sayt</a></li>
+                    <li class="my-2 hover:bg-gray-50 h-full p-3 rounded w-full block  hover:text-[#a271f2]"><a onclick="opendropmobile('webDropdown1')"
+                            href="#">Veb sayt</a>
+                        <ul id="webDropdown1" style="display: none;"
+                            class="mobileMenuDropdown term-scrollbar-dropdown  flex absolute left-[10%] top-[8rem] z-[99]  lg:ml-8 md:-ml-8 -ml-3 bg-white flex-col md:py-4 py-2 text-black border border-slate-200 rounded-lg box-border md:min-w-[340px] lg:max-w-none md:max-w-[380px] max-w-[340px]">
+                            <div
+                                class="flex items-center px-2 sm:px-8 md:pl-8 py-3 md:pr-12 lg:pr-4 cursor-pointer hover:bg-slate-50">
+                                <div class="hidden md:block p-3 bg-blue-100 rounded-lg mr-4"><img alt="navbar-icon"
+                                        fetchpriority="high" width="28" height="28" decoding="async" data-nimg="1"
+                                        class="max-w-[28px]"
+                                        src="https://api.websiteca.com/storage/lJ9i3mHSrGbIyOFk6VnqpcyzeZgiKmjyiUfdEhAc.svg"
+                                        style="color: transparent;"></div>
+                                <div class="flex flex-col">
+                                    <p class="text-slate-700 font-medium text-base lg:w-max">Hökumət və qeyri-kommersiya
+                                        saytları</p>
+                                    <p
+                                        class="text-slate-500 md:text-sm text-xs lg:w-max md:max-w-[400px] max-w-[320px] md:line-clamp-2">
+                                        Hökumət və qeyri-kommersiya saytları</p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex items-center px-2 sm:px-8 md:pl-8 py-3 md:pr-12 lg:pr-4 cursor-pointer hover:bg-slate-50">
+                                <div class="hidden md:block p-3 bg-blue-100 rounded-lg mr-4"><img alt="navbar-icon"
+                                        fetchpriority="high" width="28" height="28" decoding="async" data-nimg="1"
+                                        class="max-w-[28px]"
+                                        src="https://api.websiteca.com/storage/fcdQoEskESpjwrkLUcNKqvm0ZFwzn7kAspkBfwI5.svg"
+                                        style="color: transparent;"></div>
+                                <div class="flex flex-col">
+                                    <p class="text-slate-700 font-medium text-base lg:w-max">Kiçik biznes saytları</p>
+                                    <p
+                                        class="text-slate-500 md:text-sm text-xs lg:w-max md:max-w-[400px] max-w-[320px] md:line-clamp-2">
+                                        Kiçik bizneslər üçün saytlar</p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex items-center px-2 sm:px-8 md:pl-8 py-3 md:pr-12 lg:pr-4 cursor-pointer hover:bg-slate-50">
+                                <div class="hidden md:block p-3 bg-blue-100 rounded-lg mr-4"><img alt="navbar-icon"
+                                        fetchpriority="high" width="28" height="28" decoding="async" data-nimg="1"
+                                        class="max-w-[28px]"
+                                        src="https://api.websiteca.com/storage/vQyageZW9Eb4rKazAWwrY3xUTem15TN9Ofdk8oUk.svg"
+                                        style="color: transparent;"></div>
+                                <div class="flex flex-col">
+                                    <p class="text-slate-700 font-medium text-base lg:w-max">E-ticarət saytları</p>
+                                    <p
+                                        class="text-slate-500 md:text-sm text-xs lg:w-max md:max-w-[400px] max-w-[320px] md:line-clamp-2">
+                                        E-ticarət saytları</p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex items-center px-2 sm:px-8 md:pl-8 py-3 md:pr-12 lg:pr-4 cursor-pointer hover:bg-slate-50">
+                                <div class="hidden md:block p-3 bg-blue-100 rounded-lg mr-4"><img alt="navbar-icon"
+                                        fetchpriority="high" width="28" height="28" decoding="async" data-nimg="1"
+                                        class="max-w-[28px]"
+                                        src="https://api.websiteca.com/storage/otN2FW4K7vPTfJRqYOqYJMRj1VZDil02yYCmA0mx.svg"
+                                        style="color: transparent;"></div>
+                                <div class="flex flex-col">
+                                    <p class="text-slate-700 font-medium text-base lg:w-max">Hüquq firma saytı</p>
+                                    <p
+                                        class="text-slate-500 md:text-sm text-xs lg:w-max md:max-w-[400px] max-w-[320px] md:line-clamp-2">
+                                        Hüquq firma saytı</p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex items-center px-2 sm:px-8 md:pl-8 py-3 md:pr-12 lg:pr-4 cursor-pointer hover:bg-slate-50">
+                                <div class="hidden md:block p-3 bg-blue-100 rounded-lg mr-4"><img alt="navbar-icon"
+                                        fetchpriority="high" width="28" height="28" decoding="async" data-nimg="1"
+                                        class="max-w-[28px]"
+                                        src="https://api.websiteca.com/storage/zJjPDvohOxpgJj7wenVSBaGbTgNOuigFvjxLmhw5.svg"
+                                        style="color: transparent;"></div>
+                                <div class="flex flex-col">
+                                    <p class="text-slate-700 font-medium text-base lg:w-max">Bloqlar və Şəxsi Vebsayt
+                                    </p>
+                                    <p
+                                        class="text-slate-500 md:text-sm text-xs lg:w-max md:max-w-[400px] max-w-[320px] md:line-clamp-2">
+                                        Bloqlar və Şəxsi Vebsayt</p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex items-center px-2 sm:px-8 md:pl-8 py-3 md:pr-12 lg:pr-4 cursor-pointer hover:bg-slate-50">
+                                <div class="hidden md:block p-3 bg-blue-100 rounded-lg mr-4"><img alt="navbar-icon"
+                                        fetchpriority="high" width="28" height="28" decoding="async" data-nimg="1"
+                                        class="max-w-[28px]"
+                                        src="https://api.websiteca.com/storage/RG2ZavDFVNsih7XSr36x2pxKPQxXekuAgO2VXif6.svg"
+                                        style="color: transparent;"></div>
+                                <div class="flex flex-col">
+                                    <p class="text-slate-700 font-medium text-base lg:w-max">Daşınmaz əmlak veb saytı
+                                    </p>
+                                    <p
+                                        class="text-slate-500 md:text-sm text-xs lg:w-max md:max-w-[400px] max-w-[320px] md:line-clamp-2">
+                                        Daşınmaz əmlak veb saytı</p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex items-center px-2 sm:px-8 md:pl-8 py-3 md:pr-12 lg:pr-4 cursor-pointer hover:bg-slate-50">
+                                <div class="hidden md:block p-3 bg-blue-100 rounded-lg mr-4"><img alt="navbar-icon"
+                                        fetchpriority="high" width="28" height="28" decoding="async" data-nimg="1"
+                                        class="max-w-[28px]"
+                                        src="https://api.websiteca.com/storage/khwNG7uXgAPtW9wilTtK12LaUADpZgeQb3UvOqvB.svg"
+                                        style="color: transparent;"></div>
+                                <div class="flex flex-col">
+                                    <p class="text-slate-700 font-medium text-base lg:w-max">Tibb - Doktor Saytlar</p>
+                                    <p
+                                        class="text-slate-500 md:text-sm text-xs lg:w-max md:max-w-[400px] max-w-[320px] md:line-clamp-2">
+                                        Tibb Doktor Saytlar</p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex items-center px-2 sm:px-8 md:pl-8 py-3 md:pr-12 lg:pr-4 cursor-pointer hover:bg-slate-50">
+                                <div class="hidden md:block p-3 bg-blue-100 rounded-lg mr-4"><img alt="navbar-icon"
+                                        fetchpriority="high" width="28" height="28" decoding="async" data-nimg="1"
+                                        class="max-w-[28px]"
+                                        src="https://api.websiteca.com/storage/qKRz4fKbiAGalPgCtcAGVuV5AnCAhx8WkRAMdV3L.svg"
+                                        style="color: transparent;"></div>
+                                <div class="flex flex-col">
+                                    <p class="text-slate-700 font-medium text-base lg:w-max">WordPress Saytları</p>
+                                    <p
+                                        class="text-slate-500 md:text-sm text-xs lg:w-max md:max-w-[400px] max-w-[320px] md:line-clamp-2">
+                                        WordPress Saytları</p>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
                     <li class="my-2 hover:bg-gray-50 h-full p-3 rounded w-full block hover:text-[#a271f2]"><a
                             href="#">Domain</a></li>
                     <li class="my-2 hover:bg-gray-50 h-full p-3 rounded w-full block  hover:text-[#a271f2]"><a
@@ -573,11 +930,13 @@
                     </div>
 
                 </div>
-                <div class="teklifler lg:w-1/3 w-full h-full sticky top-0 min-h-[50vh] flex flex-col mb-8 justify-between">
+                <div
+                    class="teklifler lg:w-1/3 w-full h-full sticky top-0 min-h-[50vh] flex flex-col mb-8 justify-between">
                     <div class="flex flex-col gap-4 p-8 bg-white">
                         <p class="text-[19px] font-semibold">Təklifiniz</p>
                         <p class="flex flex-row justify-between items-center"><span class="text-[#8b8b9a]">Statik
-                                səhifələr :</span><span id="statiksehntc" class="text-[#A271F2] font-bold text-lg">₼0</span></p>
+                                səhifələr :</span><span id="statiksehntc"
+                                class="text-[#A271F2] font-bold text-lg">₼0</span></p>
                         <p class="flex flex-row justify-between items-center"><span class="text-[#8b8b9a]">Əlavələr
                                 :</span><span id="elavem" class="text-[#A271F2] font-bold text-lg  ">₼ 0</span></p>
                         <p class="flex flex-row justify-between items-center"><span class="text-[#8b8b9a]">SEO
@@ -595,7 +954,7 @@
                     </div>
 
                     <h3 class="bg-[#a271f2] text-white text-2xl gap-2 p-8 flex flex-row justify-between items-center">
-                        <span>Ümumi təxmini dəyəri:</span><span  id="umumideyer" value="450"
+                        <span>Ümumi təxmini dəyəri:</span><span id="umumideyer" value="450"
                             class="font-semibold whitespace-nowrap"> 450 ₼</span>
                     </h3>
 
