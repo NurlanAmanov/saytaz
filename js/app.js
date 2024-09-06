@@ -69,7 +69,7 @@ function opendropmobile(dropdownId) {
 
 function menuac() {
     mobilemenu.style.display = 'block';
-    document.querySelector('body').style.overflowY="hidden"
+    // document.querySelector('body').style.overflowY="hidden"
    
 }
 function closedmenu() {
