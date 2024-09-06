@@ -23,46 +23,23 @@ let ticaretgokod = 0
 let dizayngokod = 0
 let hesablakod = 0
 
-
 function toggleDropdown(dropdownId) {
-   
-    const dropdowns = document.querySelectorAll('.term-scrollbar-dropdown');
-
-    const selectedDropdown = document.getElementById(dropdownId);
+    const dropdowns = document.querySelectorAll('.mobileMenuDropdown, .term-scrollbar-dropdown, .drop');
+    const selectedDropdown = document.getElementById(dropdownId); 
 
     dropdowns.forEach(dropdown => {
         if (dropdown !== selectedDropdown) {
-            dropdown.style.display = 'none'; 
+            dropdown.style.display = 'none';
         }
     });
 
-
+  
     if (selectedDropdown.style.display === 'none' || selectedDropdown.style.display === '') {
-        selectedDropdown.style.display = 'block';
+        selectedDropdown.style.display = 'block'; 
     } else {
-        selectedDropdown.style.display = 'none';
+        selectedDropdown.style.display = 'none'; 
     }
 }
-function opendropmobile(dropdownId) {
-   
-    const dropdowns = document.querySelectorAll('.term-scrollbar-dropdown');
-
-    const selectedDropdown = document.getElementById(dropdownId);
-
-    dropdowns.forEach(dropdown => {
-        if (dropdown !== selectedDropdown) {
-            dropdown.style.display = 'none'; 
-        }
-    });
-
-
-    if (selectedDropdown.style.display === 'none' || selectedDropdown.style.display === '') {
-        selectedDropdown.style.display = 'block';
-    } else {
-        selectedDropdown.style.display = 'none';
-    }
-}
-
 
 
 
@@ -98,6 +75,7 @@ function goelave() {
     goelavekod = kod; 
     əlavələrntc.innerHTML = "₼ " + kod;
     elavem.innerHTML = "₼ " + kod;
+    umuminiHesabla(); 
 }
 goelave();
 
@@ -151,6 +129,12 @@ function hesabla() {
 
 function umuminiHesabla() {
     let umumiNetice = goelavekod + elavegokod + ticaretgokod + hesablakod + dizayngokod;
+    
+    
+    if (umumiNetice < 450 ) {
+        umumiNetice = 450;
+    }
+    
     umumideyer.innerHTML = "₼ " + umumiNetice.toFixed(0);
 }
 
