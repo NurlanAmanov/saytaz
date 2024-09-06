@@ -1,4 +1,5 @@
 const mobilemenu = document.getElementById('mobilemenu');
+const langs=document.getElementById('langs')
 const mobileDropdown=document.getElementById('mobileDropdown')
 const statiksehife = document.getElementById('statiksehife')
 const murekbdizayn = document.getElementById('murekbdizayn')
@@ -41,8 +42,18 @@ function toggleDropdown(dropdownId) {
     }
 }
 
+function langdeyis() {
+   
+    
+   
+    if (langs.style.display === 'none' || langs.style.display === '') {
+        langs.style.display = 'flex';
+    } 
 
-
+    else {
+        langs.style.display = 'none';
+    }
+}
 
 function menuac() {
     mobilemenu.style.display = 'block';

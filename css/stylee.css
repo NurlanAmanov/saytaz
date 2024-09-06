@@ -24,7 +24,13 @@ header{
     max-height: 500px;
     overflow-y: scroll;
 }
-
+.divlangs{
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 10px;
+    width:80px;
+    
+   
+}
 .drop::-webkit-scrollbar {
     width: 5px; 
 }

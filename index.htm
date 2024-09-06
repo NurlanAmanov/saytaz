@@ -429,8 +429,12 @@
                         <option value="">$</option>
                     </select>
                 </div>
-                <div class="dil w-12 flex items-center justify-center">
+                <div class="dil w-12 relative flex items-center justify-center" onclick="langdeyis()">
                     <img src="img/az.png" class="w-8" alt="">
+                    <div id="langs" class="divlangs flex items-center justify-center p-3 z-50 gap-2 absolute top-[3rem] flex-col bg-white" style="display: none;">
+                        <img src="img/az.png" class="w-8" alt="">
+                        <img src="img/us.png" class="w-8" alt="">
+                    </div>
                 </div>
             </div>
             <button onclick="menuac()" class="lg:hidden">
