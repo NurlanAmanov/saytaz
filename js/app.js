@@ -44,15 +44,10 @@ function toggleDropdown(dropdownId) {
 
 function langdeyis() {
    
-    
+    langs.style.display === "none"  || langs.style.display==='' ?   
+    langs.style.display='flex'  :  langs.style.display = 'none'
    
-    if (langs.style.display === 'none' || langs.style.display === '') {
-        langs.style.display = 'flex';
-    } 
-
-    else {
-        langs.style.display = 'none';
-    }
+  
 }
 
 function menuac() {
@@ -142,9 +137,12 @@ function umuminiHesabla() {
     let umumiNetice = goelavekod + elavegokod + ticaretgokod + hesablakod + dizayngokod;
     
     
-    if (umumiNetice < 450 ) {
+    if (umumiNetice < 450  ) {
         umumiNetice = 450;
+    }else if(umumiNetice > 100)  {
+       umumideyer.innerHTML=''
     }
+        
     
     umumideyer.innerHTML = "₼ " + umumiNetice.toFixed(0);
 }
