@@ -18,6 +18,8 @@ const umumideyer = document.getElementById('umumideyer')
 const umumhesablama = document.getElementById("umumhesablama")
 const statiksehntc = document.getElementById('statiksehntc')
 const openpop =document.getElementById('openpop')
+const exchang =document.getElementById('exchang')
+const exchang2 =document.getElementById('exchang2')
 let kod = ''
 
 let goelavekod = 0
@@ -44,6 +46,15 @@ function toggleDropdown(dropdownId) {
     }
 }
 
+function exchgo(){
+    exchang.style.display==='none' || exchang.style.display===''?
+    exchang.style.display='flex' : exchang.style.display="none"
+}
+function exchgo2(){
+    exchang2.style.display==='none' || exchang2.style.display===''?
+    exchang2.style.display='flex' : exchang2.style.display="none"
+}
+
 function langdeyis() {
    
     langs.style.display === "none"  || langs.style.display==='' ?   
@@ -51,6 +62,7 @@ function langdeyis() {
    
   
 }
+
 function langdeyis2() {
    
     langs2.style.display === "none"  || langs2.style.display==='' ?   
