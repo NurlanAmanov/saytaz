@@ -1,5 +1,6 @@
 const mobilemenu = document.getElementById('mobilemenu');
 const langs=document.getElementById('langs')
+const langs2=document.getElementById('langs2')
 const mobileDropdown=document.getElementById('mobileDropdown')
 const statiksehife = document.getElementById('statiksehife')
 const murekbdizayn = document.getElementById('murekbdizayn')
@@ -16,6 +17,7 @@ const logodizayn = document.getElementById('logodizayn')
 const umumideyer = document.getElementById('umumideyer')
 const umumhesablama = document.getElementById("umumhesablama")
 const statiksehntc = document.getElementById('statiksehntc')
+const openpop =document.getElementById('openpop')
 let kod = ''
 
 let goelavekod = 0
@@ -49,19 +51,21 @@ function langdeyis() {
    
   
 }
+function langdeyis2() {
+   
+    langs2.style.display === "none"  || langs2.style.display==='' ?   
+    langs2.style.display='flex'  :  langs2.style.display = 'none'
+   
+  
+}
 
 function menuac() {
     mobilemenu.style.display = 'block';
-    // document.querySelector('body').style.overflowY="hidden"
-   
 }
 function closedmenu() {
     mobilemenu.style.display = 'none';
     document.querySelector('body').style.overflowY = "auto";
-
 }
-
-
 function goelave() {
     let kod = 0;
     if (adminpanel.checked) kod += +adminpanel.value;
@@ -114,7 +118,7 @@ function ticaretgo() {
 
 function dizayngo() {
     let artim = +dizaynim.value;
-    let dizaynhesab = (artim - 1) * 100;
+    let dizaynhesab = (artim -1) * 100;
     dizayngokod = dizaynhesab; 
     dizaynlogo.innerHTML = "₼" + dizaynhesab;
     logodizayn.innerHTML = "₼" + dizaynhesab;
@@ -124,12 +128,12 @@ function dizayngo() {
 function hesabla() {
     let sehifeartim = +statiksehife.value;
     let murekebdizay = +murekbdizayn.value;
-    let deyisendeyer = (sehifeartim * 0.1);
-    let cemler = (murekebdizay) * 1000;
+    let deyisendeyer = (sehifeartim * 0.01);
+    let cemler = (murekebdizay) * 10000;
     let yekun = deyisendeyer * cemler;
     hesablakod = yekun; 
     saytntc.innerHTML = sehifeartim + " səhifə / ₼ " + yekun.toFixed(0);
-    statiksehntc.innerHTML = yekun.toFixed(0) + "₼";
+    statiksehntc.innerHTML = "₼ " + yekun.toFixed(0) ;
     umuminiHesabla();
 }
 
@@ -139,8 +143,6 @@ function umuminiHesabla() {
     
     if (umumiNetice < 450  ) {
         umumiNetice = 450;
-    }else if(umumiNetice > 100)  {
-       umumideyer.innerHTML=''
     }
         
     
@@ -155,3 +157,28 @@ ticaretgo();
 dizayngo();
 hesabla();
 
+function sendgo() {
+    
+    let fullName = document.getElementById("fullName").value;
+    let phoneNumber = document.getElementById("phoneNumber").value;
+    let email = document.getElementById("email").value;
+    let notes = document.getElementById("notes").value;
+
+    
+    let message = `Ad və soyad: ${fullName}\nTelefon nömrəsi: ${phoneNumber}\nEmail: ${email}\nQeydlər: ${notes ? notes : "Yoxdur"}`;
+
+    let encodedMessage = encodeURIComponent(message);
+
+    let whatsappUrl = `https://api.whatsapp.com/send?phone=994703421512&text=${encodedMessage}`;
+    
+
+    window.open(whatsappUrl, '_blank');
+}
+
+function popopen(){
+
+    openpop.style.display = "flex"
+}
+function opoupclos(){
+    openpop.style.display = "none"
+}
