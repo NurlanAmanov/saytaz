@@ -1830,29 +1830,35 @@
                             <h2 class="text-[20px] mb-2 font-bold">Veb sayt təklifi</h2>
                             <p class="text-[19px] font-bold">Zəhmət olmasa əlaqə məlumatlarını təqdim edin</p>
                         </div>
-                        <form class="px-7.5  w-[80%]">
+                        <form class="px-7.5  w-[80%]" id="contactForm">
                             <div>
-                                <div class="mb-2.5 w-full"><input
+                                <div class="mb-2.5 w-full">
+                                    <input
                                         class="form-input border w-full p-2 text-[19px] h-[55px] rounded-[10px]"
-                                        placeholder="Ad və  soyad" required="" type="text" name="fullName"></div>
-                                <div class="flex justify-between mb-2.5 ">
-                                    <div><input class="form-input border w-full p-2 text-[19px] h-[55px] rounded-[10px]"
-                                            placeholder="Telefon nömrəniz" required="" type="tel" name="phoneNumber">
+                                        placeholder="Ad və soyad" required="" type="text" name="fullName" id="fullName">
+                                </div>
+                                <div class="flex justify-between mb-2.5">
+                                    <div>
+                                        <input class="form-input border w-full p-2 text-[19px] h-[55px] rounded-[10px]"
+                                            placeholder="Telefon nömrəniz" required="" type="tel" name="phoneNumber" id="phoneNumber">
                                     </div>
-                                    <div><input class="form-input border w-full p-2 text-[19px] h-[55px] rounded-[10px]"
-                                            placeholder="Elektron poçt ünvanı" required="" type="email" name="email">
+                                    <div>
+                                        <input class="form-input border w-full p-2 text-[19px] h-[55px] rounded-[10px]"
+                                            placeholder="Elektron poçt ünvanı" required="" type="email" name="email" id="email">
                                     </div>
                                 </div>
-                                <div class="pb-6"><textarea placeholder="Bəzi qeydlər... (Məcburi deyil)" name="notes"
-                                        cols="30" rows="5"
-                                        class="form-textArea border w-full p-4  text-[19px] h-[150px] rounded-[10px]"></textarea>
+                                <div class="pb-6">
+                                    <textarea placeholder="Bəzi qeydlər... (Məcburi deyil)" name="notes" cols="30" rows="5"
+                                        class="form-textArea border w-full p-4 text-[19px] h-[150px] rounded-[10px]" id="notes"></textarea>
                                 </div>
-                                <div class="murcaiet flex items-center justify-center  p-4">
-                                    <button onclick="sendgo()" class="round-2 bg-[#2BC48A] w-[50%] h-[60px] text-white text-xl py-2 border font-bold btnshdow   rounded-md">Müraciət et <i class="fa-solid fa-arrow-right ml-3"></i></button>
+                                <div class="murcaiet flex items-center justify-center p-4">
+                                    <button type="button" onclick="sendgo()" class="round-2 bg-[#2BC48A] w-[50%] h-[60px] text-white text-xl py-2 border font-bold btnshdow rounded-md">
+                                        Müraciət et <i class="fa-solid fa-arrow-right ml-3"></i>
+                                    </button>
                                 </div>
                             </div>
-
                         </form>
+                        
                     </div>
                 </div>
 

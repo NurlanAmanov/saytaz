@@ -158,23 +158,29 @@ dizayngo();
 hesabla();
 
 function sendgo() {
-    
+ 
+    event.preventDefault();
+
+
     let fullName = document.getElementById("fullName").value;
     let phoneNumber = document.getElementById("phoneNumber").value;
     let email = document.getElementById("email").value;
     let notes = document.getElementById("notes").value;
 
-    
+
+    if (!phoneNumber.startsWith('+994')) {
+        phoneNumber = '+994' + phoneNumber.slice(1);
+    }
+
     let message = `Ad və soyad: ${fullName}\nTelefon nömrəsi: ${phoneNumber}\nEmail: ${email}\nQeydlər: ${notes ? notes : "Yoxdur"}`;
+
 
     let encodedMessage = encodeURIComponent(message);
 
     let whatsappUrl = `https://api.whatsapp.com/send?phone=994703421512&text=${encodedMessage}`;
-    
 
     window.open(whatsappUrl, '_blank');
 }
-
 function popopen(){
 
     openpop.style.display = "flex"
