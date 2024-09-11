@@ -4,29 +4,22 @@ const langs2=document.getElementById('langs2')
 const mobileDropdown=document.getElementById('mobileDropdown')
 const statiksehife = document.getElementById('statiksehife')
 const murekbdizayn = document.getElementById('murekbdizayn')
-const saytntc = document.getElementById('saytntc')
-const əlavələrntc = document.getElementById("əlavələrntc")
-const elavem = document.getElementById("elavem")
-const seo = document.getElementById("seo")
-const elavesayt = document.getElementById('elavesayt')
-const ticntc = document.getElementById('ticntc')
-const eticaret = document.getElementById('eticaret')
-const dizaynlogo = document.getElementById('dizaynlogo')
 const dizaynim = document.getElementById('dizaynim')
 const logodizayn = document.getElementById('logodizayn')
 const umumideyer = document.getElementById('umumideyer')
 const umumhesablama = document.getElementById("umumhesablama")
 const statiksehntc = document.getElementById('statiksehntc')
+const eticarets = document.getElementById('eticarets')
 const openpop =document.getElementById('openpop')
 const exchang =document.getElementById('exchang')
 const exchang2 =document.getElementById('exchang2')
 let kod = ''
-
-let goelavekod = 0
-let elavegokod = 0
-let ticaretgokod = 0
-let dizayngokod = 0
+let newseo=0
+let newticaret=0
+let newelave=0
 let hesablakod = 0
+let dizayngokod = 0
+
 
 function toggleDropdown(dropdownId) {
     const dropdowns = document.querySelectorAll('.mobileMenuDropdown, .term-scrollbar-dropdown, .drop');
@@ -78,59 +71,9 @@ function closedmenu() {
     mobilemenu.style.display = 'none';
     document.querySelector('body').style.overflowY = "auto";
 }
-function goelave() {
-    let kod = 0;
-    if (adminpanel.checked) kod += +adminpanel.value;
-    if (bloq.checked) kod += +bloq.value;
-    if (profiller.checked) kod += +profiller.value;
-    if (respansiv.checked) kod += +respansiv.value;
-    if (analtikiz.checked) kod += +analtikiz.value;
-    if (socialmedia.checked) kod += +socialmedia.value;
-    if (rezerv.checked) kod += +rezerv.value;
-    if (xerite.checked) kod += +xerite.value;
-    if (elaqeforma.checked) kod += +elaqeforma.value;
-    if (qalareya.checked) kod += +qalareya.value;
-    if (canlisohbet.checked) kod += +canlisohbet.value;
-    if (mesaj.checked) kod += +mesaj.value;
-    if (form.checked) kod += +form.value;
-    if (saytaxtir.checked) kod += +saytaxtir.value;
-    goelavekod = kod; 
-    əlavələrntc.innerHTML = "₼ " + kod;
-    elavem.innerHTML = "₼ " + kod;
-    umuminiHesabla(); 
-}
-goelave();
-
-function elavego() {
-    let hesab = 0;
-    if (meta.checked) hesab += +meta.value;
-    if (qabaqciltexn.checked) hesab += +qabaqciltexn.value;
-    if (sitemap.checked) hesab += +sitemap.value;
-    if (acarsoz.checked) hesab += +acarsoz.value;
-    if (basliqteq.checked) hesab += +basliqteq.value;
-    elavegokod = hesab; 
-    elavesayt.innerHTML = "₼ " + hesab;
-    seo.innerHTML = "₼ " + hesab;
-    umuminiHesabla(); 
-}
-
-function ticaretgo() {
-    let ticarethesab = 0;
-    if (odenis.checked) ticarethesab += +odenis.value;
-    if (mehsullar.checked) ticarethesab += +mehsullar.value;
-    if (filtr.checked) ticarethesab += +filtr.value;
-    if (sebet.checked) ticarethesab += +sebet.value;
-    if (like.checked) ticarethesab += +like.value;
-    if (mehsulhaqq.checked) ticarethesab += +mehsulhaqq.value;
-    ticaretgokod = ticarethesab; 
-    ticntc.innerHTML = "₼ " + ticarethesab;
-    eticaret.innerHTML = "₼ " + ticarethesab;
-    umuminiHesabla();
-}
-
 function dizayngo() {
     let artim = +dizaynim.value;
-    let dizaynhesab = (artim -1) * 100;
+    let dizaynhesab = (artim-1) * 100;
     dizayngokod = dizaynhesab; 
     dizaynlogo.innerHTML = "₼" + dizaynhesab;
     logodizayn.innerHTML = "₼" + dizaynhesab;
@@ -150,7 +93,7 @@ function hesabla() {
 }
 
 function umuminiHesabla() {
-    let umumiNetice = goelavekod + elavegokod + ticaretgokod + hesablakod + dizayngokod;
+    let umumiNetice =  newticaret+ newelave +newseo +  hesablakod  + dizayngokod;
     
     
     if (umumiNetice < 450  ) {
@@ -162,10 +105,6 @@ function umuminiHesabla() {
 }
 
 umuminiHesabla()
-
-goelave();
-elavego();
-ticaretgo();
 dizayngo();
 hesabla();
 
@@ -200,3 +139,43 @@ function popopen(){
 function opoupclos(){
     openpop.style.display = "none"
 }
+
+
+function vebealve(){
+
+    let count = 0, inputs=document.querySelectorAll("#elveler input")
+    inputs.forEach(item=> {
+        if(item.checked) count += +item.value
+    })
+    newelave=count
+    əlavələrntc.innerHTML="₼"+count
+    elavem.innerHTML="₼"+count
+    umuminiHesabla()
+}vebealve()
+
+function axtarismotom(){
+    let count =0, inputs=document.querySelectorAll("#axtarismoto input")
+    inputs.forEach(item=>{
+        if(item.checked) count += +item.value 
+    })
+    newseo=count
+    axtarisntc.innerHTML= "₼"+count
+    seo.innerHTML= "₼"+count
+
+    umuminiHesabla()
+}
+axtarismotom()
+
+function  tcrtgo(){
+   
+    let count =0, inputs=document.querySelectorAll('#eletronelave input')
+    inputs.forEach(item=>{
+        if(item.checked) count+=+item.value
+    })
+    newticaret=count
+    elelktronnct.innerHTML="₼"+count
+    eticarets.innerHTML="₼"+count
+    umuminiHesabla()
+}
+tcrtgo()
+
